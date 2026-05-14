@@ -84,18 +84,22 @@
   },
   "scripts": {
     "clean": "rm -rf build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider craco build",
     "analyse": "node analyse.js",
     "prebuild": "npm run generate-build-version",
     "generate-build-version": "node generate-build-version",
-    "start-dev": "env-cmd -f ./.env.dev craco start",
-    "start-test": "env-cmd -f ./.env.test craco start",
-    "start-staging": "env-cmd -f ./.env.staging craco start",
-    "start-prod": "env-cmd -f ./.env.prod craco start",
-    "build-test": "env-cmd -f ./.env.test craco build",
-    "build-staging": "env-cmd -f ./.env.staging craco build",
-    "build-prod": "env-cmd -f ./.env.prod craco build",
+    "start-dev": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.dev craco start",
+    "start-test": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.test craco start",
+    "start-staging": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.staging craco start",
+    "start-prod": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.prod craco start",
+    "build-test": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.test craco build",
+    "build-staging": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.staging craco build",
+    "build-prod": "NODE_OPTIONS=--openssl-legacy-provider env-cmd -f ./.env.prod craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "20.x"
   },
   "eslintConfig": {
     "extends": "react-app"
