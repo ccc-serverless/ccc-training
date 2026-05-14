@@ -1,4 +1,4 @@
-@import "../../utils/colors.scss";
+@use "../../utils/colors" as *;
 
 .wrapper {
     width: 100%;
