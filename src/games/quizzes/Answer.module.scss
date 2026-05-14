@@ -1,0 +1,323 @@
+//Exclusive style for the sequence game (AnsSequence)
+#sequenceWrapper {
+    overflow: auto;
+    .controller {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        button {
+            margin-left: auto;
+            background-color: #ffffff;
+            color: #ff613f;
+            width: 102px;
+            height: 32px;
+            border: 1px solid #ff613f;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    }
+    .indicator {
+        .incorrect {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #cf0000;
+            animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            svg {
+                margin-right: 5px;
+            }
+        }
+        .correct {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #c6ffc1;
+            animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+    .draggableItem {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        .itemContent {
+            p {
+                font-size: 12px;
+                font-weight: 600;
+                color: #000000;
+            }
+        }
+        .dragIcon {
+            width: 30px;
+            margin-left: auto;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .pill {
+        padding: 10px 15px;
+        border-radius: 100px;
+        background-color: #b2cfff;
+    }
+
+    .paralellogram {
+        padding: 10px 15px;
+
+        background-color: #fbb5af;
+        transform: skew(-20deg);
+        p {
+            transform: skew(20deg);
+        }
+    }
+
+    .rectangle {
+        padding: 10px 15px;
+        background-color: #ffe495;
+    }
+
+    .diamond {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        transform: rotate(45deg);
+        background-color: #68e88a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// --------------------------------------------------------------
+.droppable {
+    position: relative;
+    font-size: 13px;
+
+    @function getTop($n) {
+        @return 38 + (90 * ($n - 1));
+    }
+    .slNo {
+        position: absolute;
+        left: -10px;
+
+        &:nth-child(1) {
+            top: 38px;
+        }
+        &:nth-child(2) {
+            top: getTop(2) * 1px;
+        }
+        &:nth-child(3) {
+            top: getTop(3) * 1px;
+        }
+        &:nth-child(4) {
+            top: getTop(4) * 1px;
+        }
+        &:nth-child(5) {
+            top: getTop(5) * 1px;
+        }
+        &:nth-child(6) {
+            top: getTop(6) * 1px;
+        }
+        &:nth-child(7) {
+            top: getTop(7) * 1px;
+        }
+        &:nth-child(8) {
+            top: getTop(7) * 1px;
+        }
+        &:nth-child(9) {
+            top: getTop(7) * 1px;
+        }
+        &:nth-child(10) {
+            top: getTop(7) * 1px;
+        }
+    }
+}
+
+// Common styles of all answer component
+.wrapper {
+    width: 50%;
+    height: 100%;
+    padding: 20px 30px;
+    border: solid 1px #d4d4d4;
+    border-radius: 10px;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 40px 30px;
+    position: relative;
+    background: linear-gradient(to right, #6a2c70, #d093d4);
+    z-index: 1;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: height 1s;
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .ansIndicator {
+        height: 120px;
+    }
+    .answer {
+        width: 100%;
+        button {
+            width: 120px;
+            height: 40px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #6a2c70;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-left: auto !important;
+            display: block; // for margin auto to work
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            label {
+                font-size: 12px;
+                color: #ffffff;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            input {
+                width: 100%;
+                min-height: 40px;
+                overflow: none;
+                margin-bottom: 10px;
+                word-wrap: break-word;
+                outline: none;
+                border: none;
+                resize: none;
+                border-radius: 5px;
+                background-color: #ffffff;
+                padding: 10px;
+                color: #2f2f2f;
+            }
+        }
+    }
+    .solutionText {
+        margin-top: auto;
+        p {
+            font-size: 13px;
+            font-weight: 500;
+            color: #ffffff;
+            &:first-child {
+                font-size: 16px;
+            }
+        }
+    }
+    .solution {
+        margin-top: auto;
+        display: flex;
+        justify-content: flex-end;
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            button {
+                width: 120px;
+                height: 40px;
+                background-color: transparent;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                border-radius: 5px;
+                margin-left: 10px;
+                transition: all 0.2s;
+                outline: none;
+                &:hover {
+                    background: white;
+                    color: #6a2c70;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        width: 100%;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px 10px;
+    }
+    #sequenceWrapper {
+        .draggableItem {
+            width: 95%;
+            margin-left: auto !important;
+        }
+    }
+    .droppable {
+        .slNo {
+            left: 5px;
+            &:nth-child(1) {
+                top: 50px;
+            }
+            &:nth-child(2) {
+                top: 135px;
+            }
+            &:nth-child(3) {
+                top: 220px;
+            }
+            &:nth-child(4) {
+                top: 310px;
+            }
+            &:nth-child(5) {
+                top: 395px;
+            }
+        }
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

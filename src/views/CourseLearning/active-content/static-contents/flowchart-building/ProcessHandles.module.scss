@@ -1,0 +1,21 @@
+.wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 43px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 10px;
+    margin-bottom: 16px;
+    svg {
+        stroke: #c4c4c4;
+        fill: #c4c4c4;
+    }
+    p {
+        font-size: 14px;
+        color: #000000;
+        margin-left: 10px;
+    }
+}

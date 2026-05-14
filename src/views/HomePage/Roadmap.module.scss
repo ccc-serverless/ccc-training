@@ -1,0 +1,205 @@
+@import "../../utils/colors.scss";
+.wrapper {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    padding-bottom: 40px;
+    .background {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        bottom: -250px;
+        z-index: -1;
+    }
+    .illustration {
+        position: absolute;
+        width: 300px;
+        right: 0;
+        z-index: -1;
+        animation: MoveUpDown 3s linear infinite;
+    }
+    .heading {
+        font-size: 24px;
+        font-weight: 300;
+        color: $text-grey;
+        margin-bottom: 20px;
+    }
+    .mobileRoadmap {
+        display: none;
+    }
+    .roadmap {
+        width: 840px;
+        margin: 0 auto;
+        transform: scale(1.2);
+        margin-top: 100px;
+        .blocks {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            img {
+                width: 210px;
+            }
+            .arrow {
+                width: 20px;
+                position: absolute;
+                // left: calc(25% - 5px);
+                z-index: -1;
+            }
+            .line1,
+            .line2,
+            .line3 {
+                position: absolute;
+                z-index: -2;
+                top: -20px;
+            }
+            .line1 {
+                left: 25%;
+                transform: translateX(-50%);
+            }
+            .line2 {
+                left: 50%;
+                transform: translateX(-50%);
+                top: auto;
+                bottom: 0;
+            }
+            .line3 {
+                left: 75%;
+                transform: translateX(-50%);
+            }
+        }
+        .blocksSecond {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img {
+                width: 210px;
+            }
+            .line4,
+            .line5 {
+                position: absolute;
+                z-index: -2;
+                // top: -20px;
+            }
+            .line4 {
+                right: 0;
+                top: -50px;
+                right: 25%;
+                transform: translateX(50%);
+            }
+            .line5 {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.inactive {
+    filter: grayscale(100%);
+}
+
+.flip {
+    transform: scaleX(-1) !important;
+}
+
+.downward {
+    transform: rotate(90deg) !important;
+}
+
+.verticle {
+    transform: rotate(-90deg) !important;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        bottom: -70px;
+    }
+    50% {
+        bottom: -60px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .wrapper {
+        .roadmap {
+            transform: scale(1);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .roadmap {
+            display: none;
+        }
+        .background {
+            bottom: auto;
+            top: -200px;
+        }
+        .illustration {
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .mobileRoadmap {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-bottom: 120px;
+            .mobileLine,
+            .mobileArrow {
+                position: absolute;
+            }
+            .mobileLine {
+                height: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .mobileArrow {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 80px;
+                width: 20px;
+                // animation: move 8s infinite linear;
+            }
+            .block {
+                display: flex;
+                align-items: center;
+                width: 343px;
+                height: 70px;
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+                background-color: #fff;
+                padding: 10px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                position: relative;
+                img {
+                    width: 45px;
+                    margin-right: 20px;
+                }
+                p {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #6a2c70;
+                }
+                .bg {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        top: 80px;
+    }
+    to {
+        top: 600px;
+    }
+}

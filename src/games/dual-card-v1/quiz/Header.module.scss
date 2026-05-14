@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    padding: 25px;
+    .heading {
+        user-select: none;
+        font-size: 14px;
+        letter-spacing: 0.96px;
+        color: #777;
+    }
+    position: relative;
+
+    .tagsContainer {
+        display: flex;
+        align-items: center;
+        .topic {
+            user-select: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: #6a2c70;
+            margin-right: 20px;
+        }
+        .tags {
+            display: flex;
+            align-items: center;
+            .tag {
+                user-select: none;
+                font-size: 13px;
+                font-weight: 500;
+                color: #6a2c70;
+                padding: 6px 10px;
+                border-radius: 5px;
+                background-color: rgba(106, 44, 112, 0.1);
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

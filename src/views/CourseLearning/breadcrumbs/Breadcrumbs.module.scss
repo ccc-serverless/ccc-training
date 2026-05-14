@@ -1,0 +1,111 @@
+.wrapper {
+    // position: fixed;
+    // width: 100%;
+    // height: 40px;
+
+    padding: 0px 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    z-index: 2;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container.desktop {
+        display: flex;
+        align-items: center;
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: fit-content;
+            svg {
+                width: 18px;
+                stroke: #2f2f2f;
+                margin: auto 8px;
+            }
+            p {
+                font-size: 0.9em;
+                color: #2f2f2f;
+                &:last-child {
+                    color: #6a2c70;
+                    font-weight: 600;
+                }
+            }
+        }
+        .controllers {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            button {
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                svg {
+                    width: 20px;
+                    stroke: #2f2f2f;
+                }
+                &.prev {
+                    border-right: 1px solid #eee;
+                }
+            }
+        }
+    }
+    .container.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        height: 60px;
+
+        .container {
+            flex-direction: column;
+            padding-top: 5px;
+            align-items: flex-start;
+
+            .breadcrumbs {
+                flex-wrap: wrap;
+            }
+            .controllers {
+                width: 100%;
+                justify-content: space-between;
+                button {
+                    &.prev {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        height: 40px;
+        .container {
+            padding: 0;
+        }
+        .container.desktop {
+            display: none !important;
+        }
+        .container.mobile {
+            display: flex !important;
+            align-items: center !important;
+            width: 100%;
+
+            position: relative;
+            span:first-child {
+                position: absolute;
+                left: 0;
+            }
+            span:nth-child(1) {
+                cursor: pointer;
+            }
+        }
+    }
+}

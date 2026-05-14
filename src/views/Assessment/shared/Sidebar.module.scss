@@ -1,0 +1,96 @@
+.wrapper {
+    width: 100%;
+    padding-top: 1em;
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+    border-right: 1px solid #d4d4d4;
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        padding-left: calc(2em - 10px);
+        cursor: pointer;
+        width: fit-content;
+        span:first-child {
+            position: relative;
+            top: 3px;
+        }
+
+        margin-bottom: 1em;
+        // color: rgba(1, 1, 1, 0.8);
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        padding-left: 2em;
+        margin-bottom: 1em;
+        color: #6a2c70;
+    }
+
+    .noPointer {
+        pointer-events: none;
+    }
+
+    position: relative;
+    .crossBtn {
+        display: none;
+        position: absolute;
+        top: 0em;
+        left: 0.5em;
+        font-size: 2.5rem;
+        color: rgba(1, 1, 1, 0.8);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .instruction {
+        text-align: center;
+        width: 100%;
+        padding-inline: 1em;
+        font-size: 0.9rem;
+    }
+
+    .questions {
+        article {
+            padding-left: 2em;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                margin-right: 10px;
+                color: #3e943e;
+            }
+        }
+
+        article:first-child {
+            border-top: 1px solid rgba(1, 1, 1, 0.2);
+        }
+
+        article.active {
+            position: relative;
+            font-weight: 500;
+            &::before {
+                position: absolute;
+                left: 0;
+                content: "";
+                width: 5px;
+                height: calc(100% + 1px);
+                background-color: #6a2c70;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        padding-top: 4em;
+        .crossBtn {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    margin-top: -35px;
+    margin-left: -60px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-weight: 600;
+        padding-top: 50px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.wrapper.backgroundNeutral {
+    background-image: url("../../assets/images/games/code-fill/background-neutral.webp");
+}
+
+.wrapper.backgroundCorrect {
+    background-image: url("../../assets/images/games/code-fill/background-correct.jpg");
+}
+
+.wrapper.backgroundIncorrect {
+    background-image: url("../../assets/images/games/code-fill/background-incorrect.webp");
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        margin-left: -15px;
+    }
+}

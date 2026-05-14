@@ -1,0 +1,41 @@
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWrapper {
+    margin: 0 10px;
+}
+
+.result {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.bigButton {
+    width: 150px !important;
+}
+
+.resultTitle {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #848484;
+}
+
+@media (max-width: 450px) {
+    .buttonsWrapper {
+        flex-direction: column;
+    }
+    .buttonWrapper {
+        margin: 10px auto;
+    }
+}

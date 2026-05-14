@@ -1,0 +1,107 @@
+.wrapper {
+    .heading {
+        font-size: 24px;
+        color: #2f2f2f;
+        margin-bottom: 15px;
+    }
+    .block {
+        width: 90%;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .quesImages {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .img {
+            width: 440px;
+            margin-right: 20px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .decisionText {
+        font-size: 14px;
+        color: #2f2f2f;
+        margin-bottom: 20px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        .block {
+            width: 386px;
+            &:first-child {
+                margin-right: 20px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .trigger {
+        width: 100%;
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        button {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+        .quesImages {
+            justify-content: flex-start;
+            .img {
+                width: 320px;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .block {
+            width: 100%;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .quesImages {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .img {
+                width: 340px;
+                margin-right: 0;
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .row {
+            flex-direction: column;
+            .block {
+                width: 340px;
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .trigger {
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50">
+    <path fill="#fff" d="M0 0H50V50H0z"/>
+    <path fill="#6A2C70" d="M9.315 7.887H41.397999999999996V14.45H9.315z"/>
+    <mask id="toekizibya" fill="#fff">
+        <rect width="35" height="36.458" x="7.857" y="6.428" rx="2"/>
+    </mask>
+    <rect width="35" height="36.458" x="7.857" y="6.428" fill="#6A2C70" fill-opacity=".2" stroke="#6A2C70" stroke-width="4.4" mask="url(#toekizibya)" rx="2"/>
+    <path stroke="#6A2C70" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M20.16 21.74l-4.282 4.689 4.375 4.79M30.554 31.22l4.282-4.688-4.375-4.79"/>
+    <circle cx="33.743" cy="11.168" r="1.094" fill="#fff"/>
+    <circle cx="30.097" cy="11.168" r="1.094" fill="#fff"/>
+    <circle cx="37.388" cy="11.168" r="1.094" fill="#fff"/>
+    <path stroke="#A681A9" stroke-linecap="round" stroke-width="2.2" d="M23.496 28.954L26.771 23.282"/>
+</svg>

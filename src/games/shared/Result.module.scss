@@ -1,0 +1,155 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.downBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border: none;
+    padding: 5px 20px;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    background: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: 989898;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonAlign {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonAlign button {
+    margin: 0 10px;
+}
+
+.bigButton {
+    width: 150px !important;
+}
+
+.downBtn svg {
+    stroke: #838383;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.downText {
+    color: #838383;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.subText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.subBtn {
+    width: 181px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #6a2c70;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.speedometerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.speedometersContainer {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loginWrapper .loginTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginWrapper .loginController {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWrapper .loginController p {
+    margin-left: 15px;
+    color: #848484;
+}
+
+.loginWrapper .loginController p span {
+    color: #6a2c70;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.loginWrapper .loginController p span a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subText {
+        text-align: center;
+    }
+    .speedometerTitle {
+        font-size: 14px;
+    }
+    .speedometersContainer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .subBtn {
+        margin-top: 10px;
+    }
+    .buttonAlign {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonAlign button {
+        margin: 10px auto;
+    }
+}

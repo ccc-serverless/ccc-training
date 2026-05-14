@@ -1,0 +1,184 @@
+.mobileWrapper {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    border-radius: 10px;
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+
+    .preGameWrapper {
+        margin-top: 40px;
+        min-height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #282c34, $alpha: 0.9);
+        border-radius: 10px;
+        padding: 0 100px;
+        text-align: center;
+        p {
+            &:first-child {
+                font-size: 22px;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 16px;
+            }
+            &:nth-child(2) {
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 32px;
+            }
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: inset 0 -4px 10px 0 rgba($color: #6a2c70, $alpha: 0.3);
+            border: solid 1px #999;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            color: #6a2c70;
+        }
+    }
+
+    .btnFullscreenToggle {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+
+        z-index: 101;
+
+        svg {
+            color: white;
+        }
+    }
+
+    .header {
+        .heading {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            p {
+                font-size: 15px;
+            }
+            button {
+                width: 120px;
+                height: 35px;
+                background-color: #6a2c70;
+                color: #ffffff;
+                border-radius: 5px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 5px 0 15px;
+            }
+        }
+    }
+
+    .dndFlowContainer {
+        overflow-y: hidden;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-color: #282c34;
+        border-radius: 15px;
+
+        .reactflowWrapper {
+            flex-grow: 1;
+            height: 100%;
+
+            .reactFlow {
+                height: 100%;
+            }
+        }
+    }
+
+    .fullscreen {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        border-radius: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .endgame {
+        .main {
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #6a2c70;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        p {
+            font-size: 16px;
+            color: white;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        button {
+            width: 200px;
+            height: 36px;
+            padding: 0 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:nth-child(2) {
+                border: solid 1px #6a2c70;
+                background-color: #ffffff;
+                margin-bottom: 15px;
+                color: #6a2c70;
+            }
+            &:nth-child(3) {
+                background-color: #6a2c70;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .gameClock {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .endgame {
+        .main {
+            width: 100% !important;
+        }
+    }
+}

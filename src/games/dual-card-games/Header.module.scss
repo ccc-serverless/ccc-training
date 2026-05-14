@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+    .title {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .quesCounter {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

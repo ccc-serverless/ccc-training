@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+    min-height: 300px;
+    height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        padding: 5px !important;
+    }
+}

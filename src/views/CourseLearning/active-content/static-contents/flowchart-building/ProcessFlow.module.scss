@@ -1,0 +1,49 @@
+.wrapper {
+    p {
+        font-size: 12px;
+        text-align: left;
+        color: #777777;
+        margin-bottom: 5px;
+    }
+    .ioBox {
+        min-width: 230px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #000000;
+    }
+    .blue {
+        border: solid 2px #93d4da;
+        background-color: #d1e8ea;
+    }
+    .pink {
+        border: solid 2px #eb9992;
+        background-color: #fdb9b3;
+    }
+    .yellow {
+        border: 2px solid #FFC93C;
+        background-color: #FFED99;
+    }
+    .processBox {
+        min-width: 230px;
+        min-height: 72px;
+        border-radius: 5px;
+        border: 2px solid #6a2c70;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+            margin-bottom: 0;
+        }
+    }
+    .connector {
+        text-align: center;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

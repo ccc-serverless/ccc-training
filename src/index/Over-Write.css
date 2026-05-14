@@ -1,0 +1,133 @@
+body {
+  padding-top: 60px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.carousel-root,
+.carousel,
+.carousel-slider {
+  height: 100% !important;
+}
+
+.carousel .control-dots .dot {
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: none !important;
+  box-shadow: none !important;
+  background: #cecece !important;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  margin: 0 8px;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #848484 !important;
+}
+
+.carousel-status {
+  display: none;
+}
+
+/* speedometer */
+
+.current-value {
+  display: none;
+}
+
+.Toastify__toast--success {
+  background-color: #6a2c70 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+#home-camp-carousel .swiper-pagination {
+  visibility: hidden;
+}
+
+#home-camp-carousel .swiper-slide {
+  width: fit-content !important;
+}
+
+#home-camp-carousel .swiper-pagination-bullet-active {
+  background-color: #6a2c70 !important;
+}
+
+#carouselModal .swiper-pagination-bullet-active {
+  background-color: #6a2c70 !important;
+}
+
+#carouselModal .swiper-button-next,
+#carouselModal .swiper-button-prev {
+  position: absolute;
+  transform: translateY(-50%);
+  color: #6a2c70;
+}
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  z-index: 10;
+}
+
+/* .react-flow__edge-path {
+    stroke-width: 1.5 !important;
+    stroke: #ffffff !important;
+} */
+
+/* .react-flow__arrowhead polyline {
+  stroke: #ffffff !important;
+  fill: white !important;
+} */
+
+.bundleContainerCarousel .swiper-button-next::after,
+.bundleContainerCarousel .swiper-button-prev::after {
+  font-size: 1rem;
+  color: #1176ae;
+  position: absolute;
+
+  background-color: rgba(1, 1, 1, 0.1);
+  padding: 1em;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer !important;
+}
+
+.bundleContainerCarousel .swiper-button-next::after {
+}
+
+@media (max-width: 700px) {
+  #home-camp-carousel .swiper-pagination {
+    visibility: visible;
+  }
+}
+
+.react-pdf__Page__textContent {
+  display: none;
+}

@@ -1,0 +1,141 @@
+.wrapper {
+  min-height: 100vh;
+  background-image: url("../../assets/images/registrations/registrations_bg.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 3em 2em;
+
+  $primaryColor: #1176ae;
+  $paddingInlineInner: 3em;
+
+  .inner {
+    background-color: white;
+    width: calc(min(700px, 100%));
+    padding: 1em $paddingInlineInner;
+
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+
+    label {
+      display: inline-block;
+      font-size: 0.9rem;
+      margin-bottom: 0.5em;
+      font-weight: 500;
+      color: black;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 1em;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 2em;
+    }
+
+    .stepperWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2em;
+
+      .stepper {
+        width: calc(min(400px, 100%));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 3em;
+
+        .line {
+          height: 3px;
+          width: 100%;
+          background-color: #e2e2e2;
+        }
+
+        .line.isDone {
+          background-color: #1176ae;
+        }
+
+        .circleStep {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .circle {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            min-height: 30px;
+            background-color: #e2e2e2;
+            color: #999999;
+            border-radius: 50%;
+          }
+
+          position: relative;
+
+          .text {
+            display: inline-block;
+            bottom: -25px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #999999;
+            width: 140px;
+            text-align: center;
+          }
+        }
+
+        .circleStep.isActive {
+          .circle {
+            background-color: #e7f6ff;
+            color: #1176ae;
+          }
+        }
+
+        .circleStep.isDone {
+          .circle {
+            background-color: $primaryColor;
+            color: white;
+          }
+          .text {
+            color: #1176ae;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    .inner {
+      padding-inline: 2em;
+
+      .stepperWrapper {
+        .stepper {
+          .circleStep {
+            .text {
+              width: 80px;
+              bottom: -45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

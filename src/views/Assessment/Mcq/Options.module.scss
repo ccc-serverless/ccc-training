@@ -1,0 +1,21 @@
+.wrapper {
+    .radioWrapper {
+        background-color: #fff;
+        width: fit-content;
+        border-radius: 5px;
+        padding-left: 15px;
+        transition: all 0.2s;
+        min-width: 150px;
+        margin-bottom: 10em;
+    }
+
+    .choiceLabel {
+        * {
+            color: white !important;
+        }
+    }
+
+    * {
+        font-family: "Montserrat", sans-serif !important;
+    }
+}

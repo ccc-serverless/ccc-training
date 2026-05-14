@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    p {
+        &:first-child {
+            font-size: 24px;
+            font-weight: 800;
+            color: #6a2c70;
+        }
+        &:last-child {
+            font-size: 14px;
+            color: #555555;
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .wrapper {
+        width: 90%;
+    }
+}

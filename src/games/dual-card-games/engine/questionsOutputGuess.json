@@ -1,0 +1,7 @@
+[
+    {
+        "type": "output",
+        "question": "<p>a = 4.5<p><p>b = 2</p><p>print(a/b)</p>",
+        "answer": "2.0"
+    }
+]

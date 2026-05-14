@@ -1,0 +1,46 @@
+[
+    {
+        "type": "mcq",
+        "question": "<p>Which one of the following is the correct extension of the Python file?</p>",
+        "options": {
+            "option1": ".python",
+            "option2": ".py",
+            "option3": ".p",
+            "option4": "None of these"
+        },
+        "answer": "option2"
+    },
+    {
+        "type": "mcq",
+        "question": "<p>How to output the string “May the odds favor you” in Python?</p>",
+        "options": {
+            "option1": "print(“May the odds favor you”)",
+            "option2": "echo(“May the odds favor you”)",
+            "option3": "System.out(“May the odds favor you”)",
+            "option4": "printf(“May the odds favor you”)"
+        },
+        "answer": "option1"
+    },
+    {
+        "type": "mcq",
+        "question": "<p>Which character is used in Python to make a single line comment?</p>",
+        "options": {
+            "option1": "/",
+            "option2": "//",
+            "option3": "#",
+            "option4": "?"
+        },
+        "answer": "option3"
+    },
+    {
+        "type": "mcq",
+        "question": "What do we use to define a block of code in Python language?</p>",
+        "options": {
+            "option1": "Indentation",
+            "option2": "Key",
+            "option3": "Brackets",
+            "option4": "None of these"
+        },
+        "answer": "option1"
+    }
+]

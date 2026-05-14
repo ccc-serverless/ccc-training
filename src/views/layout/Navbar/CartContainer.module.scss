@@ -1,0 +1,127 @@
+.light {
+    color: white;
+}
+
+.dark {
+    color: #555555;
+}
+
+.invert {
+    color: #6a2c70;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    span.iconWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        svg {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+    span.count {
+        $size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 35px;
+        bottom: 26px;
+        border: 1px solid rgba(1, 1, 1, 0.1);
+        width: $size;
+        height: $size;
+        font-size: 12px;
+        text-align: center;
+        background-color: white;
+        border-radius: 50%;
+        color: #ff0000;
+    }
+    .cartWrapper {
+        position: absolute;
+        background: black;
+        border: 1px solid rgba(1, 1, 1, 0.1);
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 50px;
+        width: 257px;
+        background-color: #ffffff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px 20px;
+        z-index: 20;
+        .noItemText {
+            color: #6a2c70;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            &:nth-child(n + 1) {
+                border-bottom: 1px solid #d4d4d4;
+                padding-bottom: 15px;
+            }
+            .details {
+                p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+            .remove {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6a2c70;
+                background-color: #f0eaf1;
+                width: 22px;
+                height: 22px;
+                border-radius: 100px;
+            }
+        }
+        .controller {
+            margin-top: 50px;
+            text-align: center;
+            p {
+                font-size: 12px;
+                font-weight: 600;
+                color: #6a2c70;
+                margin-bottom: 10px;
+            }
+            button {
+                width: 210px;
+                height: 32px;
+                color: #ffffff;
+                background-color: #6a2c70;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    //switching the aboslute position of wrapper
+    // normal -> absolute wrt to the cart-container div
+    // mobile -> absolute wrt to the nav-container div (or body ?)
+    .wrapper {
+        position: static;
+    }
+    //Fixing the cart icon because this was also positioned absolutely wrt to cart-container div
+    span.iconWrapper {
+        svg {
+            margin-right: 3px !important;
+        }
+    }
+    span.count {
+        right: 92px !important;
+        top: -4px;
+    }
+}

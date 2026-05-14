@@ -1,0 +1,295 @@
+.wrapper {
+    .level1Wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0;
+        width: 100%;
+        margin: 80px 0;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                $svgSize: 70px;
+                width: $svgSize;
+                height: $svgSize;
+            }
+        }
+        .divider {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: fit-content;
+        }
+    }
+    .level2Wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                $svgSize: 70px;
+                width: $svgSize;
+                height: $svgSize;
+            }
+        }
+        .level2row1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .level2row2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .level2row3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .level2row4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    // .level3Wrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: fit-content;
+    //     margin: auto;
+    //     .level3row1 {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: center;
+    //         .level3circle {
+    //             cursor: pointer;
+    //             width: 75px;
+    //             height: 75px;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //             background-color: #6a2c70;
+    //             color: #ffffff;
+    //             font-size: 2rem;
+    //             font-weight: 500;
+    //             border-radius: 100%;
+    //             margin-right: 130px;
+    //             margin-left: 130px;
+    //         }
+    //     }
+    //     .level3row2 {
+    //         display: -webkit-box;
+    //         display: -ms-flexbox;
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: center;
+    //         .level3circle {
+    //             cursor: pointer;
+    //             width: 75px;
+    //             height: 75px;
+    //             display: -webkit-box;
+    //             display: -ms-flexbox;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //             background-color: #6a2c70;
+    //             color: #ffffff;
+    //             font-size: 2rem;
+    //             font-weight: 500;
+    //             border-radius: 100%;
+    //             margin-right: 55px;
+    //             margin-left: 55px;
+    //         }
+    //     }
+    //     .level3row3 {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: center;
+    //         .level3circle {
+    //             cursor: pointer;
+    //             width: 75px;
+    //             height: 75px;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //             background-color: #6a2c70;
+    //             color: #ffffff;
+    //             font-size: 2rem;
+    //             font-weight: 500;
+    //             border-radius: 100%;
+    //             margin-right: 65px;
+    //             margin-left: 65px;
+    //         }
+    //     }
+    //     .level3row4 {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: center;
+    //         .level3circle {
+    //             cursor: pointer;
+    //             width: 75px;
+    //             height: 75px;
+    //             display: -webkit-box;
+    //             display: -ms-flexbox;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //             background-color: #6a2c70;
+    //             color: #ffffff;
+    //             font-size: 2rem;
+    //             font-weight: 500;
+    //             border-radius: 100%;
+    //         }
+    //     }
+    //     #levelThree-4 {
+    //         margin-right: 45px !important;
+    //     }
+    //     #levelThree-5 {
+    //         margin-left: 45px !important;
+    //     }
+    //     #levelThree-8 {
+    //         margin-right: 25px !important;
+    //     }
+    //     #levelThree-10 {
+    //         margin-left: 25px !important;
+    //     }
+    // }
+}
+
+// .animate {
+//     animation-name: rotate;
+//     animation-duration: 0.5s;
+//     animation-fill-mode: forwards;
+// }
+.pulse {
+    animation: pulse 1.5s infinite alternate;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        .level1Wrapper {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 60px 0 20px 0;
+            .divider {
+                width: 100% !important;
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+                .circle {
+                    margin: 0 30px;
+                    $size: 90px;
+                    min-width: $size;
+                    min-height: $size;
+                }
+            }
+            .divider:first-child {
+                margin-top: 50px;
+            }
+        }
+        .level2Wrapper {
+            margin: 150px 0 100px 0;
+            transform: rotate(90deg);
+            .circle {
+                $size: 80px;
+                min-height: $size;
+                min-width: $size;
+            }
+            span {
+                transform: rotate(-90deg);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    $svgSize: 40px;
+                    width: $svgSize;
+                    height: $svgSize;
+                }
+            }
+            .level2row1 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .level2row2 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .level2row3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .level2row4 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        .level2Wrapper {
+            .circle {
+                $size: 70px;
+                min-height: $size;
+                min-width: $size;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        .level1Wrapper {}
+        .level2Wrapper {
+            margin: 180px 0 100px 0;
+            .circle {
+                $size: 60px;
+                min-height: $size;
+                min-width: $size;
+            }
+            .level2row1 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .level2row2 {
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+            .level2row3 {
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+            .level2row4 {
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,455 @@
+{
+    "input": [{
+            "question": "How does a calculator work?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Alphabets"
+                },
+                {
+                    "id": "2",
+                    "name": "Numbers & Symbols"
+                },
+                {
+                    "id": "3",
+                    "name": "Vegetables"
+                }
+            ],
+            "flow": [{
+                    "order": "1"
+                },
+                {
+                    "order": "2",
+                    "text": "Calculator"
+                },
+                {
+                    "order": "3",
+                    "text": "Calculated answer"
+                }
+            ],
+            "answer": "Numbers & Symbols",
+            "answer_description": "Calculator takes Numbers & Symbols as input"
+        },
+        {
+            "question": "How is juice made?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Fruits"
+                },
+                {
+                    "id": "2",
+                    "name": "Paper"
+                },
+                {
+                    "id": "3",
+                    "name": "Rocks"
+                }
+            ],
+            "flow": [{
+                    "order": "1"
+                },
+                {
+                    "order": "2",
+                    "text": "Churning and extracting juice"
+                },
+                {
+                    "order": "3",
+                    "text": "Juice"
+                }
+            ],
+            "answer": "Fruits",
+            "answer_description": "Juicer converts fruits and vegetables in to juice"
+        },
+        {
+            "question": "How to toast a bread?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Bread"
+                },
+                {
+                    "id": "2",
+                    "name": "Electricity"
+                },
+                {
+                    "id": "3",
+                    "name": "Wheat"
+                }
+            ],
+            "flow": [{
+                    "order": "1"
+                },
+                {
+                    "order": "2",
+                    "text": "Toaster"
+                },
+                {
+                    "order": "3",
+                    "text": "Toast"
+                }
+            ],
+            "answer": "Bread",
+            "answer_description": "Bread is heated to make it into a toast in a toaster machine"
+        },
+        {
+            "question": "How to withdraw cash from ATM?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Money"
+                },
+                {
+                    "id": "2",
+                    "name": "Cheque"
+                },
+                {
+                    "id": "3",
+                    "name": "Debit card"
+                }
+            ],
+            "flow": [{
+                    "order": "1"
+                },
+                {
+                    "order": "2",
+                    "text": "ATM"
+                },
+                {
+                    "order": "3",
+                    "text": "Cash"
+                }
+            ],
+            "answer": "Debit card",
+            "answer_description": "Debit card is inserted into the ATM in order to withdraw cash"
+        },
+        {
+            "question": "How to get items from vending machine?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Money"
+                },
+                {
+                    "id": "2",
+                    "name": "Debit card"
+                },
+                {
+                    "id": "3",
+                    "name": "Cheque"
+                }
+            ],
+            "flow": [{
+                    "order": "1"
+                },
+                {
+                    "order": "2",
+                    "text": "Vending machine"
+                },
+                {
+                    "order": "3",
+                    "text": "M&M's"
+                }
+            ],
+            "answer": "Money",
+            "answer_description": "Money is paid to the vending machine to dispense items"
+        }
+    ],
+    "processing": [{
+            "question": "How does a calculator work?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Alphabets"
+                },
+                {
+                    "id": "2",
+                    "name": "Calculator"
+                },
+                {
+                    "id": "3",
+                    "name": "Vegetables"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Numbers & Symbols"
+                },
+                {
+                    "order": "2"
+                },
+                {
+                    "order": "3",
+                    "text": "Calculated answer"
+                }
+            ],
+            "answer": "Calculator",
+            "answer_description": "Calculator takes Numbers & Symbols as input"
+        },
+        {
+            "question": "How is juice made?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Churning and extracting juice"
+                },
+                {
+                    "id": "2",
+                    "name": "Paper"
+                },
+                {
+                    "id": "3",
+                    "name": "Rocks"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Fruits"
+                },
+                {
+                    "order": "2"
+                },
+                {
+                    "order": "3",
+                    "text": "Juice"
+                }
+            ],
+            "answer": "Churning and extracting juice",
+            "answer_description": "Juicer converts fruits and vegetables in to juice"
+        },
+        {
+            "question": "How to toast a bread?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Toaster"
+                },
+                {
+                    "id": "2",
+                    "name": "Electricity"
+                },
+                {
+                    "id": "3",
+                    "name": "Wheat"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Bread"
+                },
+                {
+                    "order": "2"
+                },
+                {
+                    "order": "3",
+                    "text": "Toast"
+                }
+            ],
+            "answer": "Toaster",
+            "answer_description": "Bread is heated to make it into a toast in a toaster machine"
+        },
+        {
+            "question": "How to withdraw cash from ATM?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Money"
+                },
+                {
+                    "id": "2",
+                    "name": "Cheque"
+                },
+                {
+                    "id": "3",
+                    "name": "ATM"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Debit card"
+                },
+                {
+                    "order": "2"
+                },
+                {
+                    "order": "3",
+                    "text": "Cash"
+                }
+            ],
+            "answer": "ATM",
+            "answer_description": "Debit card is inserted into the ATM in order to withdraw cash"
+        },
+        {
+            "question": "How to get items from vending machine?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Vending machine"
+                },
+                {
+                    "id": "2",
+                    "name": "Debit card"
+                },
+                {
+                    "id": "3",
+                    "name": "Cheque"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Money"
+                },
+                {
+                    "order": "2"
+                },
+                {
+                    "order": "3",
+                    "text": "M&M's"
+                }
+            ],
+            "answer": "Vending machine",
+            "answer_description": "Money is paid to the vending machine to dispense items"
+        }
+    ],
+    "output": [{
+            "question": "How does a calculator work?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Alphabets"
+                },
+                {
+                    "id": "2",
+                    "name": "Calculated answer"
+                },
+                {
+                    "id": "3",
+                    "name": "Vegetables"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Numbers & Symbols"
+                },
+                {
+                    "order": "2",
+                    "text": "Calculator"
+                },
+                {
+                    "order": "3"
+                }
+            ],
+            "answer": "Calculated answer",
+            "answer_description": "Calculator takes Numbers & Symbols as input"
+        },
+        {
+            "question": "How is juice made?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Juice"
+                },
+                {
+                    "id": "2",
+                    "name": "Paper"
+                },
+                {
+                    "id": "3",
+                    "name": "Rocks"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Fruits"
+                },
+                {
+                    "order": "2",
+                    "text": "Churning and extracting juice"
+                },
+                {
+                    "order": "3"
+                }
+            ],
+            "answer": "Juice",
+            "answer_description": "Juicer converts fruits and vegetables in to juice"
+        },
+        {
+            "question": "How to toast a bread?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Toast"
+                },
+                {
+                    "id": "2",
+                    "name": "Electricity"
+                },
+                {
+                    "id": "3",
+                    "name": "Wheat"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Bread"
+                },
+                {
+                    "order": "2",
+                    "text": "Toaster"
+                },
+                {
+                    "order": "3"
+                }
+            ],
+            "answer": "Toast",
+            "answer_description": "Bread is heated to make it into a toast in a toaster machine"
+        },
+        {
+            "question": "How to withdraw cash from ATM?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "Money"
+                },
+                {
+                    "id": "2",
+                    "name": "Cheque"
+                },
+                {
+                    "id": "3",
+                    "name": "Cash"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Debit card"
+                },
+                {
+                    "order": "2",
+                    "text": "ATM"
+                },
+                {
+                    "order": "3"
+                }
+            ],
+            "answer": "Cash",
+            "answer_description": "Debit card is inserted into the ATM in order to withdraw cash"
+        },
+        {
+            "question": "How to get items from vending machine?",
+            "draggables": [{
+                    "id": "1",
+                    "name": "M&M's"
+                },
+                {
+                    "id": "2",
+                    "name": "Debit card"
+                },
+                {
+                    "id": "3",
+                    "name": "Cheque"
+                }
+            ],
+            "flow": [{
+                    "order": "1",
+                    "text": "Money"
+                },
+                {
+                    "order": "2",
+                    "text": "Vending machine"
+                },
+                {
+                    "order": "3"
+                }
+            ],
+            "answer": "M&M's",
+            "answer_description": "Money is paid to the vending machine to dispense items"
+        }
+    ]
+}

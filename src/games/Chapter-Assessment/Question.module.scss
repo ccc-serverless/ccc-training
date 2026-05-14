@@ -1,0 +1,47 @@
+.wrapper {
+    color: white;
+    margin-bottom: 40px;
+    display: flex;
+
+    span {
+        font-size: 14px;
+    }
+
+    span:first-child {
+        margin-right: 5px;
+    }
+
+    span:nth-child(2) {
+        display: flex;
+        width: 80%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    * {
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+        span:nth-child(2) {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        span:nth-child(2) {
+            width: 65%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .wrapper {
+        span:nth-child(2) {
+            width: 55%;
+        }
+    }
+}

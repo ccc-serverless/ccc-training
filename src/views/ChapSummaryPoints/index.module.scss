@@ -1,0 +1,20 @@
+.wrapper {
+    h3 {
+        font-weight: 500;
+        margin-bottom: 3em;
+        font-size: 1.3rem;
+    }
+
+    section {
+        article {
+            margin-bottom: 2em;
+            display: flex;
+
+            span {
+                padding-top: 0.3em;
+                margin-right: 0.7em;
+                color: #15bfc8;
+            }
+        }
+    }
+}

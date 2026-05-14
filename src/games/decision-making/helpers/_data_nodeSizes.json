@@ -1,0 +1,13 @@
+{
+    "rect": {
+        "width": 150,
+        "height": 40
+    },
+    "diamond": {
+        "width": 120,
+        "height": 120
+    },
+    "circle": {
+        "radius": 35
+    }
+}

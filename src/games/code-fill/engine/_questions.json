@@ -1,0 +1,26 @@
+[
+    {
+        "ques": "Display the sum of 5 + 10, using two variables x and y",
+        "code": [
+            "<p> a = <span> <input type='text' name='blank-1'/> </span></p>",
+            "<p> y = 5 </p>",
+            "<p> print(x <span> <input type='text' name='blank-2'/> </span>y)</p>"
+        ],
+        "ans": {
+            "blank-1": "10",
+            "blank-2": "+"
+        }
+    },
+    {
+        "ques": "Print the sum of 5 + 10, using two variables y and x",
+        "code": [
+            "<p> y = 5 </p>",
+            "<p> a = <span> <input type='text' name='blank-1'/> </span></p>",
+            "<p> print(x <span> <input type='text' name='blank-1'/> </span>y)</p>"
+        ],
+        "ans": {
+            "blank-1": "10",
+            "blank-2": "+"
+        }
+    }
+]

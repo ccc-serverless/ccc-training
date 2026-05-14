@@ -1,0 +1,170 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 850px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .ques {
+            p {
+                &:first-child {
+                    font-size: 24px;
+                    color: #2f2f2f;
+                }
+                &:last-child {
+                    font-size: 14px;
+                    color: #000000;
+                }
+            }
+        }
+        .controller {
+            button {
+                width: 130px;
+                height: 40px;
+                border-radius: 5px;
+                pointer-events: none;
+                background-color: #d4d4d4;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .active {
+                pointer-events: all;
+                background-color: #6a2c70;
+            }
+        }
+    }
+    .flowchartDnd {
+        width: 850px;
+        min-height: 310px;
+        background-color: #ffffff;
+        border: 1px solid #d4d4d4;
+        border-radius: 10px;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        .processWrapper {
+            margin-right: 150px;
+        }
+        .processFlowWrapper {
+            margin-right: 20px;
+        }
+        .answerStatus {
+            width: 240px;
+            p {
+                &:first-child {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                &:last-child {
+                    font-size: 14px;
+                    color: #000000;
+                }
+            }
+            .correct {
+                color: #00a91b;
+            }
+            .incorrect {
+                color: red;
+            }
+        }
+        .counter {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 14px;
+            color: #000000;
+        }
+        .endgame {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: 16px;
+                color: #2f2f2f;
+                margin-bottom: 25px;
+            }
+            button {
+                width: 200px;
+                height: 36px;
+                padding: 0 10px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:nth-child(2) {
+                    border: solid 1px #6a2c70;
+                    background-color: #ffffff;
+                    margin-bottom: 15px;
+                    color: #6a2c70;
+                }
+                &:nth-child(3) {
+                    background-color: #6a2c70;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .wrapper {
+        .header {
+            width: 95%;
+        }
+        .flowchartDnd {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            .ques {
+                margin-bottom: 20px;
+            }
+            .controller {
+                margin-left: auto;
+            }
+        }
+        .flowchartDnd {
+            flex-direction: column;
+            .processWrapper {
+                width: 100%;
+                margin: 50px 0;
+                display: flex;
+                flex-wrap: wrap;
+                div {
+                    margin-right: 15px;
+                }
+            }
+            .processFlowWrapper {
+                margin: 50px 0;
+                margin-top: 0;
+            }
+            .answerStatus {
+                align-self: flex-start;
+            }
+            .endgame {
+                margin: auto;
+            }
+        }
+    }
+}

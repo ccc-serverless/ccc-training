@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .controllers {
+        flex-direction: row;
+        justify-content: space-between;
+
+        span {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .controllers {
+        display: flex !important;
+    }
+}

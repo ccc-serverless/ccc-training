@@ -1,0 +1,98 @@
+{
+    "beginner": [
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Maths for Coding",
+            "info": "Learn to apply maths & logic to develop programs for real world problems.",
+            "price1": 5999,
+            "price2": 2999,
+            "image": "collegeYellow",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Problem Solving using C/C++/Python/Java",
+            "info": "Acquire computational thinking by solving problems in C/C++/Python/Java.",
+            "price1": 5999,
+            "price2": 2999,
+            "image": "collegePurple",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Service Company Specifc Questionnares",
+            "info": "Get access to company specific mock test , prep material, processes and guidelines for recruitment.",
+            "price1": 5999,
+            "price2": 5999,
+            "image": "collegeGreen",
+            "timeout": 500
+        }
+    ],
+    "intermediate": [
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Problem Solving using Data Structures",
+            "info": "Learn to apply appropriate data structure for solving real world problems.",
+            "price1": 5999,
+            "price2": 3999,
+            "image": "collegeYellow",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Problem Solving using Algorithms",
+            "info": "Learn to apply appropriate algorithm for solving real world problems.",
+            "price1": 5999,
+            "price2": 3999,
+            "image": "collegePurple",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 60,
+            "title": "Product Company Specifc Questionnares",
+            "info": "Get access to company specific mock test , prep material, processes and guidelines for recruitment.",
+            "price1": 5999,
+            "price2": 9999,
+            "image": "collegeGreen",
+            "timeout": 500
+        }
+    ],
+    "advanced": [
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "Problem Solving for Coding Competitions",
+            "info": "Tips and Tricks for coding competitions and competitive coders. Gear up from problem solving to problem setting.",
+            "price1": 6999,
+            "price2": 4999,
+            "image": "collegeYellow",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 36,
+            "title": "OS, CN & DBMS for Placements",
+            "info": "Learn  DBMS, Operating Systems, Computer Networks for clearing placement processes.",
+            "price1": 6999,
+            "price2": 4999,
+            "image": "collegePurple",
+            "timeout": 500
+        },
+        {
+            "code": "035CF",
+            "hours": 60,
+            "title": "Product Company Specifc Questionnares",
+            "info": "Get access to company specific faqs, videos, processes and guidelines for highly paid jobs.",
+            "price1": 6999,
+            "price2": 10999,
+            "image": "collegeGreen",
+            "timeout": 500
+        }
+    ]
+}

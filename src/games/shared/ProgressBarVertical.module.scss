@@ -1,0 +1,21 @@
+.rootProgressBarVertical {
+    height: 90%;
+    padding: 10px 0px;
+    padding-bottom: 35px;
+    position: absolute;
+    z-index: 0;
+    left: 20px;
+}
+
+.rootProgressBarVertical .bar {
+    width: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .rootProgressBarVertical {
+        display: none !important;
+    }
+}

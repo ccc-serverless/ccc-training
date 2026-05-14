@@ -1,0 +1,127 @@
+.wrapper {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    margin-top: -35px;
+    margin-left: -60px;
+    background-image: url("../../assets/images/games/arithmetic/purple-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 60px;
+    position: relative;
+    .locked {
+        width: 913px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.2);
+        min-height: 350px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 50px;
+            height: 50px;
+            color: #cacaca;
+            margin-bottom: 8px;
+        }
+        p {
+            user-select: none;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+    .completed {
+        width: 913px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.2);
+        min-height: 350px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 50px;
+            height: 50px;
+            color: #cacaca;
+            margin-bottom: 8px;
+            stroke: rgba($color: greenyellow, $alpha: 0.5);
+        }
+        p {
+            user-select: none;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+    .header {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .subheader {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 26px;
+    }
+    .submissionModalWrapper {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .body {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            button {
+                width: 100px;
+                height: 40px;
+                border-radius: 10px;
+                &:first-child {
+                    border: 1px solid #d4d4d4;
+                    margin-right: 20px;
+                    width: 80px;
+                }
+                &:nth-child(2) {
+                    background-color: #6a2c70;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        .locked {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100vw !important;
+        // margin-left: -60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        width: 100vw !important;
+
+        padding-top: 15px;
+        padding-left: 15px;
+        .locked {
+            width: 90%;
+        }
+    }
+}

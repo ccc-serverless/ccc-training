@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div,
+    img {
+        margin-bottom: 3em;
+    }
+
+    img {
+        max-width: 450px;
+        width: 90%;
+    }
+
+    button {
+        background-color: #6a3170;
+        color: white;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}

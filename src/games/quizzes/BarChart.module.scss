@@ -1,0 +1,81 @@
+$lightpurple: rgba(106, 44, 112, 0.1);
+$borderGrey: rgba(1, 1, 1, 0.5);
+$theme-purple: #6a2c70;
+$labelWidth: 150px;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+    overflow-x: auto;
+    .title {
+        color: $borderGrey;
+        font-weight: 500;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+    .innerWrapper {
+        background: $lightpurple;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px 20px;
+        padding-bottom: 30px;
+        .chartWrapper {
+            position: relative;
+            .labels {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                bottom: -5px;
+                width: calc(100% - 180px);
+                left: 150px;
+                .label {
+                    position: absolute;
+                    margin-left: 0px;
+                    font-size: 10px;
+                }
+            }
+            width: 500px;
+            height: auto;
+            .lineWrapper {
+                display: flex;
+                position: relative;
+                height: 40px;
+                .labelWrapper {
+                    border-right: 1px solid #d4d4d4;
+                    display: flex;
+                    align-items: center;
+                    .label {
+                        width: $labelWidth;
+                        font-size: 0.8em;
+                        padding-right: 10px;
+                        text-align: right;
+                    }
+                }
+                .barWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    .bar {
+                        height: 6px;
+                        background: $theme-purple;
+                        width: 0;
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+        .yaxis {
+            width: calc(100% - 154px);
+            height: 1px;
+            background-color: #d4d4d4;
+            position: relative;
+            left: calc(73px);
+        }
+    }
+}

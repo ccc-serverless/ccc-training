@@ -1,0 +1,22 @@
+.wrapper {
+    width: 100%;
+    .resetBtnContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button {
+            width: 130px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: #5060a4;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 10px 0;
+
+    .levels {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        p {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            color: #848484;
+            height: 100%;
+            margin-right: 10px;
+        }
+
+        .selectors {
+            button {
+                width: 50px !important;
+            }
+            Button:first-child {
+                margin-right: 15px;
+            }
+        }
+
+        div.selectedLevel {
+            display: inline-block;
+            background: #b83b5e;
+            color: white;
+            height: 40px;
+            width: 50px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+    .sliders {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .sliderContainer {
+            &:first-child {
+                margin-right: 20px;
+            }
+            margin-bottom: 30px;
+
+            &:first-child {
+                width: 130px;
+                max-width: 150px;
+            }
+
+            &:nth-child(2) {
+                width: 150px;
+                max-width: 180px;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 0.9em;
+                margin-bottom: 12px;
+            }
+        }
+
+        div {
+            margin-right: 10px;
+        }
+        .selectedLabel {
+            color: rgba(1, 1, 1, 0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        .sliders {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: flex-start;
+
+            .sliderContainer {
+                width: 50% !important;
+                max-width: unset !important;
+            }
+        }
+    }
+}

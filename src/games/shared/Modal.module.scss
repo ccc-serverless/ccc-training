@@ -1,0 +1,63 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper {
+    width: 800px;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.top {
+    display: flex;
+    padding: 8px 20px;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+}
+
+.close {
+    margin-left: auto;
+    background: #eeeeee;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5em;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    border: none;
+    padding: 5px 20px;
+}
+
+@media (max-width: 700px) {
+    .paper {
+        width: 95%;
+    }
+}

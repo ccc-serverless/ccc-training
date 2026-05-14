@@ -1,0 +1,202 @@
+.wrapper {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    position: relative;
+    margin-top: -35px;
+    margin-left: -60px;
+    background-image: url("../../assets/images/games/arithmetic/purple-bg.jpg"), linear-gradient(to bottom right, #654ea3, #6b3d56);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    .heading {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+        p {
+            &:first-child {
+                font-size: 24px;
+                color: #ffffff;
+            }
+            &:last-child {
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+    .operators {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .operatorsRow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .operator {
+                position: relative;
+                cursor: pointer;
+                width: 182px;
+                height: 164px;
+                border-radius: 20px;
+                backdrop-filter: blur(6px);
+                box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+                border: solid 0.5px #ffffff;
+                background-color: rgba(255, 255, 255, 0.2);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s;
+                margin: 0 10px;
+                .close {
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: #ffffff;
+                    color: #4e71b8;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        stroke-width: 3px;
+                    }
+                }
+                &:hover {
+                    box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+                    border: solid 0.5px #ffffff;
+                    background-color: #ffffff;
+                    p {
+                        color: #4e71b8;
+                    }
+                }
+                .icon {
+                    width: 75px;
+                    height: 75px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    transition: all 0.2s;
+                }
+            }
+        }
+        .difficultyWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            .difficultySection {
+                margin-bottom: 50px;
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+                .difficultyBoxes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .difficulty {
+                        cursor: pointer;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                        backdrop-filter: blur(6px);
+                        box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+                        border: solid 1px #999999;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        margin: 0 15px;
+                        transition: all 0.2s;
+                        &:hover {
+                            box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+                            border: solid 1px #999999;
+                            background-color: #ffffff;
+                            color: #4e71b8;
+                        }
+                    }
+                }
+                .selectedDifficulty {
+                    box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3) !important;
+                    border: solid 1px #999999 !important;
+                    background-color: #ffffff !important;
+                    color: #4e71b8 !important;
+                }
+            }
+            .difficultyController {
+                width: 288px;
+                height: 56px;
+                border-radius: 10px;
+                backdrop-filter: blur(6px);
+                box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+                border: solid 1px #999999;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: bold;
+                color: #4e71b8;
+                svg {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .selected {
+        transform: translateX(-350px) translateY(50px) rotate(-30deg);
+        &:hover {
+            box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3) !important;
+            border: solid 0.5px #ffffff;
+            background-color: rgba(255, 255, 255, 0.2) !important;
+            p {
+                color: #ffffff !important;
+            }
+        }
+        .close {
+            transform: rotate(30deg);
+        }
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .wrapper {
+        .heading {
+            width: 90%;
+        }
+        .operators {
+            .operatorsRow {
+                .operator {
+                    width: 162px;
+                    height: 144px;
+                }
+            }
+        }
+    }
+}

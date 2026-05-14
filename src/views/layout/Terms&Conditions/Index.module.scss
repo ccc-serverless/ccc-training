@@ -1,0 +1,107 @@
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+
+    .secondNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: white;
+
+        .inner {
+            padding-top: 20px;
+            width: 80%;
+            max-width: 80%;
+
+            .title {
+                color: #1176ae;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .heading {
+                margin-top: 2px;
+                font-size: 14px;
+                color: rgba(1, 1, 1, 0.8);
+                margin-bottom: 15px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .content {
+        padding-top: 20px;
+        width: 80%;
+        max-width: 80%;
+
+        div {
+            text-align: justify;
+        }
+
+        .intro {
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .list {
+            margin-top: 40px;
+            margin-bottom: 100px;
+
+            ol.mainList {
+                list-style: none;
+                counter-reset: my-awesome-counter;
+                > li {
+                    margin-bottom: 30px;
+                    counter-increment: my-awesome-counter;
+
+                    &::before {
+                        content: counter(my-awesome-counter) ". ";
+                        color: #1176ae;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    h4 {
+                        display: inline-block;
+                        color: #1176ae;
+                        font-weight: 600;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            ul {
+                margin-left: 30px;
+                margin-bottom: 15px;
+
+                li {
+                    list-style-type: lower-alpha;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .secondNav {
+        .inner {
+            width: 90% !important;
+            max-width: 90% !important;
+        }
+    }
+
+    .content {
+        width: 90% !important;
+        max-width: 90% !important;
+    }
+}

@@ -1,0 +1,20 @@
+.rootProgressBar {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+}
+
+.rootProgressBar .bar {
+    height: 8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 700px) {
+    .rootProgressBar {
+        display: none !important;
+    }
+}

@@ -1,0 +1,343 @@
+.wrapper {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    margin-top: -35px;
+    margin-left: -60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-image: url("../../assets/images/games/arithmetic/blue-bg.jpg"), linear-gradient(to bottom right, #9860f7, #2f607d);
+    background-size: cover;
+    background-position: center;
+    .gameHeader {
+        width: 913px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        button {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: 500;
+            color: #ffffff;
+            &:hover {
+                svg {
+                    transform: rotate(180deg) scale(1.1);
+                }
+            }
+            svg {
+                margin-right: 5px;
+            }
+        }
+        .operatorIndicator {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            img {
+                width: 75px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+    }
+    .gamecard {
+        width: 913px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.2);
+        min-height: 250px;
+        position: relative;
+        .lottie {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 150px;
+            width: 200px;
+            height: 200px;
+        }
+        .header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px 20px 0 20px;
+            .headerTitle {
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                margin: 0 auto;
+            }
+        }
+        .quesAnsWrapper {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            .quesWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                * {
+                    user-select: none;
+                }
+                .swiperContainer {
+                    display: flex;
+                    justify-content: center;
+                    .slide {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .operatorSymbol {
+                    display: flex;
+                    p {
+                        margin-top: auto;
+                        font-size: 50px;
+                        line-height: 48px;
+                        font-weight: bold;
+                        color: #ffffff;
+                    }
+                    .changeStyleForDivison {
+                        font-size: 72px;
+                        font-weight: normal;
+                    }
+                }
+                .ques {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    // width: 100px;
+                    width: fit-content;
+                    p {
+                        font-size: 50px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        line-height: 48px;
+                    }
+                }
+            }
+            .fadein {
+                animation: fadein 1s forwards;
+            }
+            .fadeout {
+                animation: fadeout 1s forwards;
+            }
+            .ansWrapper {
+                margin-top: 15px;
+                form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    input {
+                        outline: none;
+                        width: 160px;
+                        padding: 10px 35px;
+                        border: none;
+                        border-top: 5px solid #ffffff;
+                        border-bottom: 5px solid #ffffff;
+                        backdrop-filter: blur(6px);
+                        background-color: rgba(255, 255, 255, 0.2);
+                        font-size: 45px;
+                        font-weight: 900;
+                        color: #4e71b8;
+                        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+                        line-height: 48px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .questionCounter {
+            padding: 0 20px 0 20px;
+            margin-bottom: 15px;
+            p {
+                margin-left: auto;
+                width: fit-content;
+                background-color: rgba(0, 0, 0, 0.25);
+                padding: 8px 15px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+        .viewResultWrapper {
+            display: flex;
+            padding-top: 50px;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            .text {
+                // border: 1px solid black;
+                color: white;
+                font-size: 35px;
+                font-weight: 500;
+            }
+            .buttons {
+                margin-top: 50px;
+                button {
+                    margin-right: 20px;
+                    font-size: 15px;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                    backdrop-filter: blur(6px);
+                    box-shadow: inset 0 -3px 8px 0 rgba(0, 0, 0, 0.3);
+                    // border: solid 1px #999999;
+                    background-color: #ffffff;
+                    font-weight: 600;
+                    color: #4e71b8;
+                }
+            }
+        }
+    }
+}
+
+.hidden {
+    animation: fadeout 1s;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+}
+
+.hide {
+    display: none !important;
+}
+
+.wrongbg {
+    background-image: url("../../assets/images/games/arithmetic/red-bg.jpg"), linear-gradient(to bottom right, #f34618, #f7b733);
+}
+
+.rightbg {
+    background-image: url("../../assets/images/games/arithmetic/green-bg.jpg"), linear-gradient(to bottom right, #20622a, #48b566);
+}
+
+.rightGameCard {
+    background-image: radial-gradient(#4bde7b, #50b370);
+    .quesAnsWrapper {
+        .ansWrapper {
+            form {
+                input {
+                    color: #50b370 !important;
+                }
+            }
+        }
+    }
+}
+
+.wrongGameCard {
+    background-image: radial-gradient(#ef6b53, #e73827);
+}
+
+@keyframes fadein {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        .gameHeader {
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .gamecard {
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        width: calc(100vw - 10px);
+        .gameHeader {
+            position: relative;
+            button {
+                position: absolute;
+                bottom: -420px;
+                left: 20px;
+            }
+        }
+        .gamecard {
+            position: relative;
+            .lottie {
+                width: 100%;
+                height: 100%;
+                left: 0;
+                z-index: 2;
+                border-radius: 15px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+                background-color: rgba(255, 255, 255, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .lottieContainer {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .header {
+                .timerWrapper {
+                    position: absolute;
+                    bottom: -100px;
+                    left: 0;
+                }
+            }
+            .quesAnsWrapper {
+                margin-top: 20px;
+            }
+            .questionCounter {
+                position: absolute;
+                bottom: -100px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        margin-left: -15px;
+    }
+}

@@ -1,0 +1,142 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0px 30px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    border: solid 1px #d4d4d4;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    position: relative;
+
+    .gameClockWrapper {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    p {
+        &:first-child {
+            font-size: 12px;
+            letter-spacing: 0.96px;
+            color: #777;
+            text-transform: uppercase;
+        }
+        &:nth-child(2) {
+            font-size: 14px;
+            font-weight: bold;
+            color: #6a2c70;
+            margin-bottom: 8px;
+        }
+    }
+    .topics {
+        display: flex;
+        margin-bottom: 30px;
+        p {
+            text-transform: capitalize;
+            font-size: 10px;
+            font-weight: 500;
+            color: #6a2c70;
+            background-color: rgba(106, 44, 112, 0.1);
+            margin-right: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+    }
+    .questionWrapper {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100%;
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 12px;
+                letter-spacing: 0.96px;
+                color: #777;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+        }
+        .question {
+            width: 100%;
+            height: 90%;
+            border-radius: 5px;
+            background-color: rgba(106, 44, 112, 0.05);
+            padding: 10px 10px;
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: normal;
+                text-align: left;
+                color: #2f2f2f;
+                text-transform: none;
+            }
+            ol,
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+    .controller {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 10px;
+        align-items: center;
+        button {
+            width: 28px;
+            height: 28px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            border: solid 1px #6a2c70;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 20px;
+            }
+        }
+        p {
+            padding: 0;
+            font-size: 10px;
+            font-weight: 500;
+            color: #666666;
+            margin: auto 0;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        min-height: 300px !important;
+        .questionWrapper {
+            flex: 1; // height 100% dont work on min-height parent , so hack to emulate 100% container height;
+            display: flex;
+            flex-direction: column;
+            .question {
+                flex: 1; // same as above
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px 10px;
+    }
+}

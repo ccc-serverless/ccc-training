@@ -1,0 +1,81 @@
+.wrapper {
+    width: 50%;
+    padding: 24px 32px;
+    position: relative;
+    .gameClockContainer {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .header {
+        margin-bottom: 32px;
+        .title {
+            font-size: 14px;
+            letter-spacing: 0.96px;
+            color: #777;
+        }
+        .gameType {
+            font-size: 14px;
+            font-weight: bold;
+            color: #6a2c70;
+            margin-bottom: 8px;
+        }
+        .tags {
+            div {
+                width: fit-content;
+                padding: 3px 10px;
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #6a2c70;
+                background-color: rgba(106, 44, 112, 0.1);
+            }
+        }
+    }
+    .quesWrapper {
+        .title {
+            font-size: 14px;
+            letter-spacing: 0.96px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+        .quesSlide {
+            min-height: 200px;
+            background-color: rgba(106, 44, 112, 0.05);
+            padding: 10px;
+            border-radius: 5px;
+            .swiperContainer {
+                .slide {
+                    .questionSlideWrapper {
+                        .question {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .quesCounter {
+        margin-top: 50px;
+        font-size: 14px;
+        letter-spacing: 0.96px;
+        color: #777;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        width: 100%;
+
+        .quesWrapper {
+            .quesSlide {
+                .swiperContainer {
+                    .slide {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

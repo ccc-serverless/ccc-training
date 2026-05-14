@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50">
+    <path fill="#fff" d="M0 0H50V50H0z"/>
+    <rect width="34.429" height="13" x="8.143" y="18.857" fill="#E1D5E2" stroke="#6A2C70" stroke-width="2" rx="3"/>
+    <rect width="34.429" height="13" x="31.857" y="8.143" fill="#E1D5E2" stroke="#6A2C70" stroke-width="2" rx="3" transform="rotate(90 31.857 8.143)"/>
+    <path fill="#C4C4C4" d="M17.143 19.285H22.143V24.285H17.143z"/>
+    <path fill="#6A2C70" d="M18.571 10v8.215l-.357.357H9.643l-1.429 1.785v10L10 32.5h8.929V25h13.214V10l-1.429-1.785-10-.358-1.428.715L18.57 10z"/>
+    <path stroke="#6A2C70" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.857 18.285L24.714 18.285M26 31.857L31.857 31.857M19.571 24.715L31.857 24.715"/>
+    <path fill="#E1D5E2" d="M29 25H34V30.714H29z"/>
+    <path fill="#6A2C70" d="M17.143 23.57H22.143V29.284H17.143z"/>
+    <circle cx="23.571" cy="12.143" r="1.429" fill="#fff"/>
+    <circle cx="27.143" cy="38.571" r="1.429" fill="#6A2C70"/>
+    <path fill="#E1D5E2" d="M20 28.715c0-1.657 1.343-3 3-3h2v5.714h-5v-2.714zM34.286 24.857c0 1.657-1.343 3-3 3h-2v-5.714h5v2.714z"/>
+    <path fill="#6A2C70" d="M32.857 22.715c0 1.657-1.343 3-3 3h-2V20h5v2.714z"/>
+</svg>

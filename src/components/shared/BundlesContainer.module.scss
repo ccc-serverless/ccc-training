@@ -1,0 +1,77 @@
+.tabsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 200px;
+        height: 36px;
+        background-color: #eee;
+        font-size: 12px;
+        font-weight: 600;
+        color: #2e3d49;
+        margin: 0 16px;
+        border-radius: 10px;
+
+        span.lock {
+            svg {
+                margin-top: 5px;
+                color: #1176ae;
+                margin-left: 5px;
+            }
+        }
+
+        span.tooltip {
+            svg {
+                display: none;
+                fill: #1176ae;
+                stroke: none;
+            }
+        }
+
+        span.lock {
+            color: white;
+        }
+    }
+
+    .activeTab {
+        position: relative;
+        background-color: #1176ae;
+        color: #fff;
+
+        span.tooltip svg {
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -18px;
+            // bottom: -50px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .tabsContainer {
+        display: block;
+        width: 100%;
+        padding-left: 16px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-bottom: 20px;
+        .tab {
+            display: inline-block;
+            width: 170px !important;
+            height: 35px;
+            padding-inline: 10px;
+            margin: 0;
+            margin-right: 16px;
+        }
+    }
+}

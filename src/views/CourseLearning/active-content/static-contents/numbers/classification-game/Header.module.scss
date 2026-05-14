@@ -1,0 +1,14 @@
+.wrapper {
+    margin-bottom: 28px;
+    p {
+        &:first-child {
+            font-size: 24px;
+            color: #2f2f2f;
+            margin-bottom: 16px;
+        }
+        &:last-child {
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+[{
+        "_id": "60ef19c4f278a3b26dcb2ac2",
+        "type": "mcq",
+        "course": {
+            "_id": "606ddfb8783dab59377d6e45",
+            "module": 3,
+            "item": 1
+        },
+        "topicId": "60c089cb9a0a41391769fe66",
+        "tagIds": ["60c089cb9a0a41391769fe68"],
+        "question": "<p>I am a decimal number and I am 0.5 less than 1, then I am _______</p>",
+        "options": {
+            "option1": "1.5",
+            "option2": "0.1",
+            "option3": "0.15",
+            "option4": "0.5"
+        },
+        "answer": "option4",
+        "editedTime": "2021-07-26T08:26:28.345Z"
+    },
+    {
+        "_id": "60ef19c4f278a3b26dcb2ac3",
+        "type": "mcq",
+        "course": {
+            "_id": "606ddfb8783dab59377d6e45",
+            "module": 3,
+            "item": 1
+        },
+        "topicId": "60c089cb9a0a41391769fe66",
+        "tagIds": ["60c089cb9a0a41391769fe68"],
+        "question": "<p>Numbers which are divisible by both 3 and 4 in the following are:</p>",
+        "options": {
+            "option1": "1312 and 2612",
+            "option2": "4449 and 8804",
+            "option3": "9924 and 1536",
+            "option4": "2700 and 3700"
+        },
+        "answer": "option3",
+        "editedTime": "2021-07-26T08:33:36.983Z"
+    },
+    {
+        "_id": "60fe34de9bb8e2029541940f",
+        "course": {
+            "_id": "606ddfb8783dab59377d6e45",
+            "module": 3,
+            "item": 1
+        },
+        "type": "mcq",
+        "topicId": "60c089cb9a0a41391769fe66",
+        "tagIds": ["60fe2ece9bb8e2029541940b"],
+        "question": "<p>Area of a rectangle =</p>",
+        "options": {
+            "option1": "Length × Breadth",
+            "option2": "Length + Breadth",
+            "option3": "2 × (Length + Breadth)",
+            "option4": "2 × (Length × Breadth)"
+        },
+        "answer": "option1",
+        "editedTime": "2021-07-26T08:37:13.815Z"
+    },
+    {
+        "_id": "60fe351d9bb8e20295419410",
+        "course": {
+            "_id": "606ddfb8783dab59377d6e45",
+            "module": 3,
+            "item": 1
+        },
+        "type": "mcq",
+        "topicId": "60c089cb9a0a41391769fe66",
+        "tagIds": ["60fe2ece9bb8e2029541940b"],
+        "question": "<p>Solve: 300 – (150×2)</p>",
+        "options": {
+            "option1": "150",
+            "option2": "100",
+            "option3": "50",
+            "option4": "0"
+        },
+        "answer": "option4",
+        "editedTime": "2021-07-26T08:37:46.642Z"
+    }
+]

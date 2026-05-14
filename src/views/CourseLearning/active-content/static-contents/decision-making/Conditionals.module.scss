@@ -1,0 +1,50 @@
+.wrapper {
+    .heading {
+        font-size: 24px;
+        color: #2f2f2f;
+        margin-bottom: 20px;
+    }
+    .subHeading {
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 40px;
+    }
+    .block {
+        margin-bottom: 40px;
+        p {
+            font-size: 14px;
+            color: #000;
+        }
+        .image {
+            max-width: 400px;
+            margin-top: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .bigImage {
+            max-width: 600px;
+            margin-top: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .scaledImage {
+            max-width: 300px;
+            margin-top: 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .trigger {
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+}

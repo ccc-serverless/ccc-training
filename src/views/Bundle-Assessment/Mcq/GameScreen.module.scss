@@ -1,0 +1,56 @@
+.wrapper {
+    width: calc(100%);
+    height: calc(100vh - 60px);
+
+    background-image: url("../../../assets/images/assessment.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-left: 60px;
+    position: relative;
+
+    .header {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .subheader {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 26px;
+    }
+    .submissionModalWrapper {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .body {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            button {
+                width: 100px;
+                height: 40px;
+                border-radius: 10px;
+                &:first-child {
+                    border: 1px solid #d4d4d4;
+                    margin-right: 20px;
+                    width: 80px;
+                }
+                &:nth-child(2) {
+                    background-color: #6a2c70;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+}

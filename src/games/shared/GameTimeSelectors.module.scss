@@ -1,0 +1,32 @@
+.dropdownWrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    .dropdown {
+        margin: 0.2rem 1rem;
+        cursor: pointer;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    .dropdown {
+        p {
+            color: #666;
+            font-weight: 500;
+        }
+    }
+    .control {
+        color: #b83b5e;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 700px) {
+    .dropdownWrapper {
+        flex-direction: column;
+        .dropdown {
+            margin-bottom: 15px;
+        }
+    }
+}

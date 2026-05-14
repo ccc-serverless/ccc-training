@@ -1,0 +1,471 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding-bottom: 100px;
+    .noCourses {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-size: 18px;
+        color: rgba(1, 1, 1, 0.6);
+    }
+    .banner {
+        width: 100%;
+        height: 70px;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+        background-image: linear-gradient(to right, #6a2c70, #d093d4);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .editProfile {
+            display: none;
+            width: 127px;
+            height: 36px;
+            border-radius: 5px;
+            border: solid 1px #6a2c70;
+            background-color: #ffffff;
+            color: #6a2c70;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            svg {
+                width: 16px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .coursesWrapper {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        .courseType {
+            font-size: 22px;
+            color: #2f2f2f;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                width: 227px;
+                height: 250px;
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.09);
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+                border-radius: 10px;
+                .image {
+                    width: 100%;
+                    height: 100px;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+                }
+                .text {
+                    padding: 0 15px;
+                    p {
+                        &:first-child {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+                .progress {
+                    margin-top: auto;
+                    margin-bottom: 10px;
+                    padding: 0 15px;
+                    .progressBarBackground {
+                        width: 100%;
+                        height: 4px;
+                        background-color: #eeeeee;
+                        .progressBarForeground {
+                            width: 10%;
+                            height: 4px;
+                            background-color: #6a2c70;
+                        }
+                    }
+
+                    p {
+                        font-size: 10px;
+                        color: #999999;
+                        margin-top: 10px;
+                    }
+                }
+
+                .controller {
+                    width: 100%;
+                    padding: 0 15px;
+                    padding-bottom: 15px;
+                    button {
+                        width: 100%;
+                        height: 30px;
+                        border-radius: 5px;
+                        background-color: #6a2c70;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .card.assessment {
+                .progress {
+                    margin-top: auto;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+
+                    p {
+                        font-size: 0.7rem;
+                        color: #999999;
+                    }
+                }
+
+                .buttons {
+                    padding: 0 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height: 100%;
+                    padding-bottom: 15px;
+
+                    button {
+                        padding: 0 0.4em;
+                        height: 30px;
+                        border-radius: 5px;
+                        background-color: #6a2c70;
+                        color: #ffffff;
+                    }
+
+                    button.result {
+                        background-color: white;
+                        color: #6a2c70;
+                        border: 1px solid #6a2c70;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .completedCoursesWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                width: 220px;
+                height: 230px;
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.09);
+                background-color: #ffffff;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+                .image {
+                    width: 100%;
+                    height: 100px;
+                    margin-bottom: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .text {
+                    margin-bottom: 15px;
+                    p {
+                        &:first-child {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #000000;
+                        }
+                    }
+                }
+                .controller {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: auto;
+                    button {
+                        &:first-child {
+                            width: 115px;
+                            height: 35px;
+                            border-radius: 5px;
+                            background-color: #6a2c70;
+                            color: #ffffff;
+                        }
+                        &:last-child {
+                            width: 69px;
+                            height: 36px;
+                            border-radius: 5px;
+                            border: solid 1px #6a2c70;
+                            background-color: #ffffff;
+                            color: #6a2c70;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .profileWrapper {
+        width: 1300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding-bottom: 60px;
+        position: relative;
+        .editProfile {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 127px;
+            height: 36px;
+            border-radius: 5px;
+            border: solid 1px #6a2c70;
+            background-color: #ffffff;
+            color: #6a2c70;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            svg {
+                width: 16px;
+                margin-left: 10px;
+            }
+        }
+        .profile {
+            width: 100%;
+            border-bottom: 1px solid #d4d4d4;
+            padding-bottom: 50px;
+            .userWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .userImage {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100px;
+                    margin-top: 40px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    color: #555555;
+                    margin-top: 10px;
+                }
+            }
+            .userInfo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                .info {
+                    padding: 0 50px;
+                    &:nth-child(2) {
+                        border-left: 1px solid #d4d4d4;
+                        border-right: 1px solid #d4d4d4;
+                    }
+                    p {
+                        &:first-child {
+                            font-size: 14px;
+                            color: #666666;
+                        }
+                        &:last-child {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .editProfileWrapper {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+        padding-bottom: 60px;
+        position: relative;
+        .backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            color: #2f2f2f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            svg {
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+        .saveButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 127px;
+            height: 36px;
+            border-radius: 5px;
+            background-color: #6a2c70;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            svg {
+                width: 16px;
+                margin-left: 10px;
+            }
+        }
+        .changeProfilePhoto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            .imageUploadWrapper {
+                cursor: pointer;
+                .editImage {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                    margin-top: 40px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 12px;
+                color: #555555;
+                margin-top: 10px;
+            }
+        }
+        .updateProfile {
+            width: 350px;
+            margin: 0 auto;
+            form {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #2f2f2f;
+                    margin-bottom: 5px;
+                }
+                input {
+                    height: 36px;
+                    border: solid 1px #d4d4d4;
+                    background-color: #fbfbfb;
+                    outline: none;
+                    padding: 5px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1355px) {
+    .wrapper {
+        .profileWrapper {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        .banner {
+            .editProfile {
+                display: flex;
+            }
+        }
+
+        .coursesWrapper {
+            .courseType {
+                justify-content: center;
+            }
+            .courses,
+            .completedCoursesWrapper {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .profileWrapper {
+            .editProfile {
+                display: none;
+            }
+            .profile {
+                padding-bottom: 30px;
+                .userInfo {
+                    flex-direction: column;
+                    .info {
+                        padding: 0;
+                        margin-bottom: 15px;
+                        &:nth-child(2) {
+                            border: none;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .wrapper {
+        .editProfileWrapper {
+            width: 95%;
+            .saveButton {
+                width: 90%;
+                top: auto;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .updateProfile {
+                width: 90%;
+            }
+        }
+    }
+}

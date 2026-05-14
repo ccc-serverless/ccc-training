@@ -1,0 +1,20 @@
+.wrapper {
+  width: 900px;
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    width: 100%;
+    padding-inline: 0.5em;
+  }
+}

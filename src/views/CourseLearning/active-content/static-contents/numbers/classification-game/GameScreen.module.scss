@@ -1,0 +1,272 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    .numbers {
+        display: flex;
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .timer {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.dropTargetWrapper {
+    width: 640px;
+    height: 350px;
+    align-self: center;
+    position: relative;
+    .tryAgainWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: 1;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            color: #2f2f2f;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4e71b8;
+            svg {
+                width: 20px;
+                height: 20px;
+                margin-top: 2px;
+            }
+        }
+    }
+    .realNosDustbin {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #b5c6d4;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        color: #fff;
+        position: relative;
+    }
+    .rationalNosDustbin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        overflow: hidden;
+        padding: 10px;
+        width: 450px;
+        height: 240px;
+        border-radius: 50%;
+        background-color: #324158;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .integersDustbin {
+        position: absolute;
+        top: 110px;
+        left: 30px;
+        width: 380px;
+        height: 150px;
+        padding: 10px;
+        transform: rotateZ(5deg);
+        margin-top: 20px;
+        border-radius: 50%;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        background-color: #8ba8ad;
+    }
+    .wholeNosDustbin {
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 260px;
+        height: 100px;
+        padding: 20px;
+        margin-top: 10px;
+        transform: rotateZ(5deg);
+        border-radius: 50%;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        background-color: #e0d2c5;
+    }
+    .naturalNosDustbin {
+        position: absolute;
+        top: 180px;
+        left: 150px;
+        width: 140px;
+        height: 70px;
+        border-radius: 50%;
+        margin-left: auto;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        background-color: #e5bba5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .irrationalNosDustbin {
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+        background-color: #e0d2c5;
+    }
+}
+
+.realNumbersDrop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    display: flex;
+    p {
+        margin-right: 5px;
+    }
+}
+
+.wholeNumberHeading {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.wholeNumbersDrop {
+    position: absolute;
+    left: 60px;
+    transform: translateX(-50%);
+    top: 60px;
+    display: flex;
+    p {
+        margin-right: 5px;
+    }
+}
+
+.naturalNumberHeading {
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.naturalNumberDrop {
+    position: absolute;
+    right: 10px;
+    transform: translateX(-50%);
+    top: 40px;
+    display: flex;
+    p {
+        margin-right: 5px;
+    }
+}
+
+.integersHeading {
+    position: absolute;
+    right: 20px;
+    top: 65px;
+}
+
+.integersDrop {
+    position: absolute;
+    right: 20px;
+    transform: translateX(-50%);
+    top: 40px;
+    display: flex;
+    p {
+        margin-right: 5px;
+    }
+}
+
+.rationalNumbersHeading {
+    color: #fff !important;
+}
+
+.rationalNumbersDrop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    display: flex;
+    p {
+        color: #fff;
+        margin-right: 5px;
+    }
+}
+
+.irrationalNumberHeading {
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.irrationalNumberDrop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    display: flex;
+    p {
+        margin-right: 5px;
+    }
+}
+
+.realLottie {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rationalLottie {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.integerLottie {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wholeLottie {
+    position: absolute;
+    top: -50px;
+    left: 15px;
+}
+
+.naturalLottie {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}

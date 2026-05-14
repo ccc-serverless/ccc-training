@@ -1,0 +1,77 @@
+.rootTimeTableSelection {
+    * {
+        user-select: none;
+    }
+
+    .btnContainer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 70px;
+        button {
+            margin-top: 20px;
+        }
+        .selectors {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    svg {
+        path {
+            cursor: pointer;
+        }
+        text {
+            cursor: pointer;
+        }
+    }
+    .subheader {
+        color: rgba(1, 1, 1, 0.4);
+        font-size: 1.2em;
+    }
+}
+
+.svgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    transition: all 0.3s;
+}
+
+.txtBlack {
+    fill: black;
+    font-size: 1.7em;
+    font-weight: medium;
+}
+
+.txtWhite {
+    fill: white;
+    font-size: 1.7em;
+    font-weight: medium;
+}
+
+@media screen and (max-width: 773px) {
+    .svgContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 !important;
+    }
+    .rootTimeTableSelection {
+        .btnContainer {
+            padding-left: 0px;
+            padding-top: 20px;
+            align-items: center;
+            width: 100%;
+        }
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tablesSvg {
+        width: 310px;
+        height: 300px;
+    }
+}

@@ -1,0 +1,44 @@
+[{
+        "question": "Select the whole numbers",
+        "options": {
+            "option1": "10.5",
+            "option2": "-1",
+            "option3": "0",
+            "option4": "10"
+        },
+        "answers": [
+            "option3",
+            "option4"
+        ],
+        "keepOptionsOrder": false
+    },
+    {
+        "question": "Select the integers",
+        "options": {
+            "option1": "-10.5",
+            "option2": "-1",
+            "option3": "2",
+            "option4": "&#8730; 9"
+        },
+        "answers": [
+            "option2",
+            "option3",
+            "option4"
+        ],
+        "keepOptionsOrder": false
+    },
+    {
+        "question": "Select rational numbers",
+        "options": {
+            "option1": "&pi;",
+            "option2": "-1",
+            "option3": "&#8730; 63",
+            "option4": "2"
+        },
+        "answers": [
+            "option2",
+            "option4"
+        ],
+        "keepOptionsOrder": false
+    }
+]

@@ -1,0 +1,190 @@
+.wrapper {
+    background-image: url("../../../assets/images/assessment.png");
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+
+    .maxWidthWrapper {
+        width: calc(min(900px, 95%));
+        margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        p {
+            color: #fff;
+            span {
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+        button {
+            width: 130px;
+            height: 30px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            svg {
+                margin-right: 6px;
+            }
+        }
+    }
+    .reportCard {
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 2em;
+
+        .testDetails {
+            display: flex;
+            align-items: center;
+            margin-bottom: 36px;
+
+            .columnOne {
+                display: flex;
+                align-items: center;
+                .icon {
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #202020;
+                }
+            }
+            .columnTwo {
+                margin-left: auto;
+                p {
+                    font-size: 0.8rem;
+                    color: #202020;
+                    &:first-child {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+        .student {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            p {
+                color: #202020;
+            }
+            div {
+                display: flex;
+                margin-top: 16px;
+                p {
+                    margin-right: 24px;
+                    span {
+                        font-weight: 800;
+                        color: #6a2c70;
+                    }
+                }
+            }
+        }
+        .topics {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            .good,
+            .bad,
+            .worse {
+                width: 48%;
+                p {
+                    color: #202020;
+                    margin-bottom: 16px;
+                }
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                span {
+                    font-size: 0.8rem;
+                    padding: 5px 10px;
+                    background-color: #f0f8f0;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .good {
+                span {
+                    color: #2e8820;
+                }
+            }
+            .worse {
+                span {
+                    color: #b92424;
+                }
+            }
+            .bad {
+                span {
+                    color: #ff6905;
+                }
+            }
+        }
+        .remarks {
+            margin-top: 20px;
+            p {
+                font-size: 14px;
+                color: #202020;
+                span {
+                    color: #6a2c70;
+                }
+            }
+        }
+    }
+    .controller {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        button {
+            &:first-child {
+                width: 185px;
+                height: 30px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                margin-right: 16px;
+                svg {
+                    margin-left: 6px;
+                }
+            }
+            &:last-child {
+                width: 120px;
+                height: 30px;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

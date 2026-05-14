@@ -1,0 +1,160 @@
+@import "../../utils/colors.scss";
+
+.wrapper {
+    width: 100%;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    .illustration {
+        position: absolute;
+        width: 280px;
+        left: 0;
+        z-index: -1;
+        animation: MoveUpDown 3s linear infinite;
+    }
+    .header {
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        p {
+            &:first-child {
+                font-size: 24px;
+                font-weight: 300;
+                color: $text-grey;
+            }
+            &:last-child {
+                font-size: 15px;
+                font-weight: 300;
+                color: $text-grey-3;
+            }
+        }
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../assets/images/landing/home/coursesbg.png);
+        background-position: center;
+        background-size: cover;
+        padding: 50px 0;
+        .glassCard {
+            width: 800px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid $light-white;
+            border-image-source: linear-gradient(
+                to top,
+                rgba(255, 255, 255, 0.2),
+                rgba(95, 142, 102, 0.19)
+            );
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(95, 142, 102, 0.19));
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 150px;
+                transform: translateY(-50%);
+                width: 80px;
+                margin-right: 40px;
+            }
+            p {
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 250px;
+            }
+            span {
+                background: linear-gradient(to right, #e3a1c0, #679fe8, #3fe1ee);
+                font-weight: 500;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        top: -140px;
+    }
+    50% {
+        top: -130px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .wrapper {
+        margin-top: -250px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .wrapper {
+        margin-top: -150px;
+        .illustration {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .header {
+            margin-bottom: 300px;
+        }
+        .courses {
+            width: 100%;
+            .glassCard {
+                width: 95%;
+            }
+        }
+    }
+    @keyframes MoveUpDown {
+        0%,
+        100% {
+            top: 140px;
+        }
+        50% {
+            top: 150px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .courses {
+            .glassCard {
+                height: 150px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 0;
+                text-align: center;
+                img {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 15px;
+                }
+                p {
+                    margin-left: 0;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        .header {
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 280px;
+        }
+    }
+}

@@ -1,0 +1,332 @@
+.wrapper {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    margin-top: -35px;
+    margin-left: -60px;
+    background-image: url("../../../../../assets/images/games/decision-making/background-neutral.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .maxWidthContainer {
+        width: 900px;
+        padding-top: 60px;
+        padding-left: 35px;
+    }
+    .swiperContainer {
+        .header {
+            margin-bottom: 20px;
+            p {
+                &:first-child {
+                    font-size: 24px;
+                    color: #fff;
+                    margin-bottom: 8px;
+                }
+            }
+            .controller {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 40px;
+                p {
+                    font-size: 14px;
+                    color: #fff;
+                }
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 107px;
+                    height: 40px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: #f08a5d;
+                    border-radius: 5px;
+                    svg {
+                        width: 16px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .container {
+            width: 100%;
+            min-height: 200px;
+            border-radius: 15px;
+            padding: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+            background-color: rgba(255, 255, 255, 0.2);
+            border: solid 1px #cacaca;
+            .top {
+                margin-bottom: 40px;
+                p {
+                    font-size: 14px;
+                    text-align: right;
+                    color: #fff;
+                }
+            }
+            .circleRow {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .circles {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 40px;
+                    .circle {
+                        margin: 0 30px;
+                        cursor: pointer;
+                        width: 100px;
+                        height: 100px;
+                        border: 1px solid #6a2c70;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 0 20px 0 rgba(106, 44, 112, 0.25);
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #6a2c70;
+                        box-shadow: 0 0 20px 0 rgba(106, 44, 112, 0.25),
+                            inset 0 -4px 10px 0 rgba(106, 44, 112, 0.8);
+                        border: solid 2px rgba(255, 255, 255, 0.5);
+                        background-color: #fff;
+                        transition: all 0.2s;
+                        &:hover {
+                            background-color: #6a2c70;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .result {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        width: 90%;
+        .header {
+            margin-bottom: 20px;
+            p {
+                &:first-child {
+                    font-size: 24px;
+                    color: #fff;
+                    margin-bottom: 8px;
+                }
+            }
+            .controller {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 40px;
+                p {
+                    font-size: 14px;
+                    color: #fff;
+                }
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 107px;
+                    height: 40px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #6a2c70;
+                    box-shadow: 0 0 20px 0 rgba(106, 44, 112, 0.25),
+                        inset 0 -4px 10px 0 rgba(106, 44, 112, 0.8);
+                    background-color: #fff;
+                    border-radius: 5px;
+                    svg {
+                        width: 16px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .graphs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border: 1px solid #d4d4d4;
+            border-radius: 5px;
+            padding: 30px;
+            .speedometerContainer {
+                width: 200px;
+                .speedometer {
+                    width: fit-content;
+                    height: fit-content;
+                    position: relative;
+                    .start,
+                    .current,
+                    .end {
+                        position: absolute;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #6a2c70;
+                    }
+                    .start {
+                        bottom: 30px;
+                        left: 0;
+                    }
+                    .end {
+                        bottom: 30px;
+                        right: -30px;
+                    }
+                    .current {
+                        top: -8px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .speedometerCaption {
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #848484;
+                    margin-top: -20px;
+                }
+            }
+            .quadrant {
+                position: relative;
+                .row {
+                    display: flex;
+                    align-items: center;
+                    .quad {
+                        width: 130px;
+                        height: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        p {
+                            &:first-child {
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: #929292;
+                                margin-bottom: 8px;
+                            }
+                            &:last-child {
+                                font-size: 11px;
+                                font-weight: 500;
+                                color: #929292;
+                            }
+                        }
+                        .active {
+                            background-color: #f1f1f1;
+                            color: #6a2c70 !important;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+                .arrow {
+                    width: 1px;
+                    height: 100%;
+                    background-color: #6a2c70;
+                    transform-origin: bottom left;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    &:nth-child(2) {
+                        height: 260px;
+                        transform: rotate(90deg);
+                        left: 0;
+                        bottom: 50%;
+                    }
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        border-style: solid;
+                        border-color: #6a2c70 transparent;
+                    }
+                    &::after {
+                        top: 0;
+                        transform: translate(-40%, -50%);
+                        border-width: 0 5px 10px 5px;
+                    }
+                    &::before {
+                        bottom: 0;
+                        transform: translate(-40%, 50%);
+                        border-width: 10px 5px 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        .maxWidthContainer {
+            width: 95%;
+            padding-left: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .swiperContainer {
+            .header {
+                .controller {
+                    flex-direction: column;
+                    height: auto;
+                    align-items: flex-start;
+                    button {
+                        margin-left: auto;
+                    }
+                }
+            }
+            .container {
+                .circleRow {
+                    flex-direction: column;
+                    .circles {
+                        margin-bottom: 20px;
+                        .circle {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .result {
+            width: 100%;
+            .header {
+                .controller {
+                    flex-direction: column;
+                    height: auto;
+                    align-items: flex-start;
+                    button {
+                        margin-left: auto;
+                    }
+                }
+            }
+            .graphs {
+                width: 100%;
+                flex-direction: column;
+                .speedometerContainer {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        margin-left: -15px;
+    }
+}

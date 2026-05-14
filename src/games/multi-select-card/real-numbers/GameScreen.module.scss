@@ -1,0 +1,102 @@
+.wrapper {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 40px);
+    margin-top: -35px;
+    margin-left: -60px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../assets/images/games/arithmetic/purple-bg.jpg"), linear-gradient(to bottom right, #9860f7, #2f607d);
+    background-size: cover;
+    background-position: center;
+    * {
+        font-family: "Montserrat", sans-serif;
+    }
+    position: relative;
+    .clockContainer {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .viewResultContainer {
+        width: 913px;
+        height: 430px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.2);
+        * {
+            color: white;
+        }
+    }
+    .welcomeScreenContainer {
+        width: 913px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0.5px #cacaca;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        .header {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        .subHeader {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.wrapper.backgroundNeutral {
+    background-image: url("../../../assets/images/games/arithmetic/purple-bg.jpg"), linear-gradient(to bottom right, #9860f7, #2f607d);
+}
+
+.wrapper.backgroundCorrect {
+    background-image: url("../../../assets/images/games/arithmetic/blue-bg.jpg"), linear-gradient(to bottom right, #9860f7, #2f607d);
+}
+
+.wrapper.backgroundIncorrect {
+    background-image: url("../../../assets/images/games/arithmetic/red-bg.jpg"), linear-gradient(to bottom right, #9860f7, #2f607d);
+}
+
+@media screen and (max-width: 1210px) {
+    .wrapper {
+        .welcomeScreenContainer {
+            width: 95%;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        .welcomeScreenContainer {
+            .subHeader {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        margin-left: -15px;
+    }
+}

@@ -1,0 +1,97 @@
+.tncModal {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .loginForm {
+        form {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 14px;
+                color: rgba(1, 1, 1, 0.7);
+                margin-bottom: 5px;
+            }
+            input {
+                height: 35px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid rgb(158, 157, 157);
+                margin-bottom: 15px;
+                padding: 0 5px;
+                transition: all 0.2s;
+                &:focus {
+                    border-color: #6a2c70;
+                }
+            }
+            button {
+                width: 100px;
+                height: 35px;
+                background-color: #6a2c70;
+                color: #ffffff;
+                border-radius: 4px;
+                font-size: 18px;
+                font-weight: 500;
+                width: 100%;
+            }
+            .error {
+                font-size: 13px;
+                font-weight: 500;
+                color: red;
+                text-align: left;
+                visibility: hidden;
+                margin: 8px 0;
+                text-align: center;
+                width: 100%;
+            }
+            .showError {
+                visibility: visible !important;
+            }
+            .passwordWrapper {
+                position: relative;
+                input {
+                    width: 100%;
+                }
+                button {
+                    position: absolute;
+                    right: 15px;
+                    top: 2px;
+                    width: fit-content;
+                    background-color: transparent;
+                    color: #6a2c70;
+                }
+            }
+        }
+    }
+    .or {
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 12px;
+        text-align: center;
+        // margin-top: 5px;
+        span {
+            font-weight: 600;
+            cursor: pointer;
+            color: #6a2c70;
+        }
+    }
+    .google {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        color: #6a2c70;
+        background-color: #ffffff;
+        border: 1px solid #6a2c70;
+        border-radius: 5px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}

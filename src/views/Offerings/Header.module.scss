@@ -1,0 +1,529 @@
+.wrapper {
+    width: 100%;
+    position: relative;
+    .cloudIcon {
+        position: absolute;
+        top: -30px;
+        right: 39%;
+        z-index: -1;
+    }
+    .folderIcon {
+        position: absolute;
+        top: 80px;
+        right: 20%;
+    }
+    .codeIcon {
+        position: absolute;
+        top: 50px;
+        left: 20%;
+    }
+    .dotsSquare {
+        position: absolute;
+        right: 0;
+    }
+    .dots {
+        position: absolute;
+        top: 20px;
+        left: 16%;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            &:first-child {
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 1.4;
+                letter-spacing: -0.6px;
+                text-align: center;
+                color: #6a2c70;
+                background-color: #faf8fa;
+                padding: 5px 40px;
+                margin-bottom: 5px;
+            }
+            &:last-child {
+                font-size: 16px;
+                line-height: 1.4;
+                letter-spacing: -0.32px;
+                text-align: center;
+                color: #555555;
+            }
+        }
+    }
+    .introCards {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .card {
+            position: relative;
+            width: 575px;
+            height: 451px;
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+            background-color: #ffffff;
+            margin: 0 2%;
+            &:last-child {
+                .topGradient {
+                    p {
+                        &:nth-child(2) {
+                            color: #18a0fb;
+                        }
+                    }
+                    button {
+                        background-color: #18a0fb;
+                    }
+                }
+            }
+            .dotsVerticle {
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                z-index: -1;
+            }
+            .topGradient {
+                padding-top: 40px;
+                position: relative;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .cardBg {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                p {
+                    z-index: 1;
+                    width: 100%;
+                    &:nth-child(2) {
+                        font-size: 24px;
+                        font-weight: 800;
+                        line-height: 1.4;
+                        letter-spacing: -0.48px;
+                        color: #ff824b;
+                    }
+                    &:nth-child(3) {
+                        width: 60%;
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #555555;
+                        margin: 10px auto;
+                    }
+                }
+                button {
+                    cursor: pointer;
+                    width: 150px;
+                    height: 35px;
+                    margin-top: 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    background-color: #ff824b;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    letter-spacing: -0.28px;
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        width: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .imgWrapper {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .roadmapWrapper {
+        width: 100%;
+        text-align: center;
+        .mobileRoadmapWrapper {
+            display: none;
+        }
+        .roadmapTitle {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: fit-content;
+            padding: 7px 38px 7px 37px;
+            background-color: #f8f4f8;
+            font-size: 22px;
+            font-weight: 800;
+            color: #6a2c70;
+        }
+        .roadmap {
+            margin: 0 auto;
+            width: 70%;
+            margin-bottom: 100px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .infoSection {
+        position: relative;
+        width: 100%;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 150px;
+            .floating {
+                left: auto;
+                right: 0;
+                width: 200px;
+            }
+            .infoTitle {
+                p {
+                    color: #264a80;
+                    background-color: #eef5ff;
+                    padding: 8px 30px;
+                }
+            }
+            .infoRow {
+                margin-left: auto;
+                margin-right: 20px;
+                .info {
+                    .infoText {
+                        P {
+                            &:first-child {
+                                color: #264a80;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .floating {
+            position: absolute;
+            left: 0;
+            width: 150px;
+        }
+        .infoTitle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-left: 150px;
+            margin-bottom: 20px;
+            p {
+                padding: 8px 50px;
+                width: fit-content;
+                font-size: 22px;
+                font-weight: 800;
+                background-color: #fffaf8;
+                color: #d93d04;
+            }
+        }
+        .infoRow {
+            // margin-left: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 220px;
+                &:nth-child(2) {
+                    margin: 0 8%;
+                }
+                .infoText {
+                    p {
+                        &:first-child {
+                            font-size: 15px;
+                            font-weight: bold;
+                            text-align: center;
+                            color: #d93d04;
+                            margin-bottom: 5px;
+                        }
+                        &:last-child {
+                            font-size: 11px;
+                            text-align: center;
+                            color: #555555;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        .folderIcon {
+            right: 15%;
+        }
+        .codeIcon {
+            left: 15%;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .wrapper {
+        .infoSection {
+            &:last-child {
+                .floating {
+                    width: 150px;
+                }
+            }
+            .floating {
+                width: 130px;
+            }
+        }
+        .folderIcon {
+            right: 5%;
+        }
+        .codeIcon {
+            left: 5%;
+        }
+        .introCards {
+            .card {
+                height: 420px;
+                .topGradient {
+                    p {
+                        &:nth-child(2) {
+                            width: 80%;
+                        }
+                    }
+                }
+                .imgWrapper {
+                    img {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .wrapper {
+        .infoSection {
+            &:last-child {
+                .floating {
+                    width: 110px;
+                }
+            }
+            .floating {
+                width: 90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .wrapper {
+        .folderIcon {
+            right: 5%;
+        }
+        .codeIcon {
+            left: 5%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .cloudIcon {
+            width: 80px;
+            right: 30%;
+        }
+        .dots {
+            width: 80px;
+            left: 20%;
+            top: 40px;
+        }
+        .codeIcon {
+            width: 80px;
+            top: 20px;
+            left: 1%;
+        }
+        .folderIcon {
+            width: 80px;
+            top: 90px;
+            right: 1%;
+        }
+        .dotsSquare {
+            width: 100px;
+            z-index: -1;
+        }
+        .banner {
+            p {
+                &:first-child {
+                    font-size: 20px;
+                }
+            }
+        }
+        .introCards {
+            flex-direction: column;
+            padding-top: 0;
+            .card {
+                width: 520px;
+                height: 430px;
+                margin: 10px auto;
+                .topGradient {
+                    height: 50%;
+                }
+                .imgWrapper {
+                    height: 50%;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        .roadmapWrapper {
+            .roadmapTitle {
+                font-size: 18px;
+            }
+            .roadmap {
+                display: none;
+            }
+            .mobileRoadmapWrapper {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                .mobileRoadmap {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+                    background-color: #ffffff;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    .roadmapBackground {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    p {
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #6a2c70;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .infoSection {
+            &:last-child {
+                .infoRow {
+                    margin-right: 0;
+                }
+                .infoTitle {
+                    p {
+                        padding: 8px 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .floating {
+                z-index: -1;
+            }
+            .infoTitle {
+                p {
+                    padding: 8px 20px;
+                    font-size: 18px;
+                }
+            }
+            .infoRow {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        .introCards {
+            .card {
+                width: 95%;
+                height: 360px;
+                .topGradient {
+                    padding-top: 20px;
+                    p {
+                        &:nth-child(2) {
+                            width: 100%;
+                            font-size: 20px;
+                        }
+                        &:nth-child(3) {
+                            width: 80%;
+                        }
+                    }
+                }
+                .imgWrapper {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        .dots {
+            width: 60px;
+            top: 25px;
+            margin-left: 5px;
+        }
+        .banner {
+            p {
+                &:first-child {
+                    padding: 0;
+                    width: 70%;
+                }
+            }
+        }
+        .introCards {
+            .card {
+                .topGradient {
+                    p {
+                        &:nth-child(3) {
+                            width: 90%;
+                        }
+                    }
+                }
+                .imgWrapper {
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        .folderIcon {
+            right: 10px;
+        }
+        .codeIcon {
+            left: 0;
+        }
+    }
+}

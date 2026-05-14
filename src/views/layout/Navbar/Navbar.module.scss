@@ -1,0 +1,251 @@
+// Dark Navbar changes . Default style is for light navbar
+.wrapper.dark {
+  background-color: #1176ae;
+
+  .logo {
+    color: white !important;
+  }
+
+  box-shadow: none !important;
+  .navigationWrapper.navigationWrapper.desktopNavigation {
+    .nav {
+      color: white !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .indicator {
+        width: 0;
+        height: 2px;
+        transition: all 0.2s;
+      }
+      .activeRoute {
+        width: 100%;
+        height: 2px;
+        background-color: #1176ae;
+      }
+      &:hover {
+        .indicator {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .mobileNavigation .dropdown {
+    background-color: #1176ae !important;
+    box-shadow: none !important;
+    .nav {
+      color: white !important;
+    }
+  }
+}
+
+//  Exclusive to the dark navbar ----------------------------------
+.transparent {
+  background-color: transparent !important;
+}
+
+button.login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 125px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1176ae;
+  svg {
+    width: 20px;
+    stroke: #1176ae;
+    margin-right: 5px;
+  }
+}
+
+button.invertButton {
+  border: 1px solid #1176ae;
+}
+
+// Exclusive to Lms Navbar -------------------------------------------------
+.wrapper.lms {
+  .hamburgerLms {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper.lms {
+    .logo {
+      order: 2;
+    }
+    .navigationWrapper {
+      justify-content: flex-start !important;
+    }
+    .hamburgerLms {
+      display: block;
+    }
+  }
+}
+
+// Common and NavbarLight priority style
+// Dark Navbar style differences written on top
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(1, 1, 1, 0.1);
+  .container {
+    position: relative;
+    width: 1300px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      color: #000000;
+
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      div {
+        display: inline-flex;
+        flex-direction: column;
+
+        span:first-child {
+          font-size: 0.9rem;
+        }
+
+        span:last-child {
+          font-weight: 400;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .hamburger,
+    .mobileNavigation {
+      display: none;
+    }
+    .navigationWrapper.desktopNavigation {
+      display: flex;
+      .nav {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 20px;
+        color: #555555;
+      }
+    }
+    .navigationWrapper.mobileNavigation {
+      .cartWrapper {
+        margin-right: 15px;
+      }
+      .dropdown.closed {
+        height: 0;
+        opacity: 0;
+        .nav {
+          opacity: 0 !important;
+        }
+      }
+      .dropdown.open {
+        opacity: 1;
+        .nav {
+          opacity: 1 !important;
+        }
+      }
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        width: 90%;
+        overflow: hidden;
+        color: #2f2f2f;
+        background-color: #ffffff;
+        box-shadow: 0 6px 6px -6px black;
+        transition: all 0.5s;
+        transform: translate(-50%, 0);
+        .hamburger {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+        .nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          height: 40px;
+          margin-bottom: 20px;
+          width: 100%;
+          color: #2f2f2f;
+          &:last-child {
+            margin-bottom: 30px;
+          }
+          &:first-child {
+            margin-top: 30px;
+          }
+          p {
+            transition: all 0.5s;
+            font-size: 18px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              width: 20px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.invertColor {
+  color: #1176ae;
+}
+
+@media (max-width: 1320px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    padding: 0 10px;
+    .container {
+      .navigationWrapper.desktopNavigation {
+        display: none;
+      }
+      .navigationWrapper.mobileNavigation {
+        display: flex;
+        .hamburger {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mobileNavigation .dropdown {
+    width: 100% !important;
+  }
+}

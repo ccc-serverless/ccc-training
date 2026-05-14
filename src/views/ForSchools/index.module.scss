@@ -1,0 +1,457 @@
+.wrapper {
+    .banner {
+        margin-top: -60px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        background-image: url("../../assets/images/school/banner.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-bottom: 1px solid #d4d4d4;
+        .container {
+            width: 1300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text {
+                width: 520px;
+                p {
+                    &:first-child {
+                        font-size: 30px;
+                        font-weight: 800;
+                        line-height: 1.13;
+                        color: #6a2c70;
+                        margin-bottom: 16px;
+                    }
+                    &:nth-child(2) {
+                        font-size: 15px;
+                        color: #6a2c70;
+                        margin-bottom: 30px;
+                    }
+                }
+                .desktopForm {
+                    label {
+                        font-size: 14px;
+                        color: #2f2f2f;
+                    }
+                    .formGroup {
+                        margin-top: 8px;
+                        display: flex;
+                        align-items: center;
+                        input {
+                            width: 290px;
+                            height: 35px;
+                            padding: 10px;
+                            border: 1px solid #6a2c70;
+                            background-color: #f9f9f9;
+                            font-size: 12px;
+                            color: #777777;
+                            outline: none;
+                        }
+                        button {
+                            width: 80px;
+                            height: 35px;
+                            background-color: #6a2c70;
+                            border: 1px solid #6a2c70;
+                            color: #ffffff;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .mobileForm {
+                display: none;
+                label {
+                    font-size: 14px;
+                    color: #2f2f2f;
+                }
+                .formGroup {
+                    margin-top: 8px;
+                    display: flex;
+                    align-items: center;
+                    input {
+                        width: 290px;
+                        height: 35px;
+                        padding: 10px;
+                        border: 1px solid #6a2c70;
+                        background-color: #f9f9f9;
+                        font-size: 12px;
+                        color: #777777;
+                        outline: none;
+                    }
+                    button {
+                        width: 80px;
+                        height: 35px;
+                        background-color: #6a2c70;
+                        border: 1px solid #6a2c70;
+                        color: #ffffff;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .image {
+                width: 380px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .benefitsWrapper {
+        background-color: #fff9f6;
+        padding: 50px 0 100px 0;
+        position: relative;
+        margin-bottom: 100px;
+        z-index: -2;
+        .floatingLeft,
+        .floatingRight {
+            width: 150px;
+            position: absolute;
+            z-index: -1;
+        }
+        .floatingLeft {
+            left: 0;
+            bottom: -20%;
+        }
+        .floatingRight {
+            right: 0;
+            bottom: -40%;
+        }
+        .heading {
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 800;
+            color: #d93d04;
+            text-align: center;
+            margin-bottom: 50px;
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 249px;
+                height: 13px;
+                background-color: #ffe2d5;
+                z-index: -1;
+            }
+        }
+        .benefits {
+            width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .benefit {
+                width: 280px;
+                &:nth-child(2) {
+                    margin: 0 100px;
+                }
+                p {
+                    &:nth-child(2) {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #d93d04;
+                        margin-bottom: 5px;
+                    }
+                    &:nth-child(3) {
+                        font-size: 12px;
+                        color: #555555;
+                    }
+                }
+            }
+        }
+    }
+    .homecampWrapper {
+        .heading {
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 800;
+            color: #6a2c70;
+            text-align: center;
+            position: relative;
+            margin-bottom: 5px;
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 213px;
+                height: 13px;
+                background-color: #f9c2fe;
+                z-index: -1;
+            }
+        }
+        .desc {
+            text-align: center;
+            font-size: 14px;
+            color: #555555;
+        }
+    }
+    .coursesWrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-top: 40px;
+        .title {
+            font-size: 22px;
+            color: #2f2f2f;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            span {
+                background-color: #ff824b;
+                width: fit-content;
+                height: fit-content;
+                font-size: 10px;
+                font-weight: bold;
+                color: #ffffff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .schoolsWrapper {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        position: relative;
+        z-index: -2;
+        .heading {
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 800;
+            color: #6a2c70;
+            text-align: center;
+            margin-bottom: 5px;
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 343px;
+                height: 13px;
+                background-color: #f9c2fe;
+                z-index: -1;
+            }
+        }
+        .desc {
+            text-align: center;
+            font-size: 14px;
+            color: #555555;
+            margin-bottom: 30px;
+        }
+        .schools {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .school {
+                min-width: 80px;
+                max-width: 80px;
+                &:nth-child(even) {
+                    margin: 0 20px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .prefooter {
+        height: 220px;
+        background-image: url("../../assets/images/school/prefooterbg.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        form {
+            label {
+                font-size: 14px;
+                color: #2f2f2f;
+            }
+            .formGroup {
+                margin-top: 8px;
+                display: flex;
+                align-items: center;
+                input {
+                    width: 290px;
+                    height: 35px;
+                    padding: 10px;
+                    border: 1px solid #6a2c70;
+                    background-color: #f9f9f9;
+                    font-size: 12px;
+                    color: #777777;
+                    outline: none;
+                }
+                button {
+                    width: 80px;
+                    height: 35px;
+                    background-color: #6a2c70;
+                    border: 1px solid #6a2c70;
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.schoolLogin {
+    width: 95%;
+    margin: 0 auto;
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            height: 36px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: #e2e2e2;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            height: 36px;
+            background-color: #6a2c70;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .wrapper {
+        .banner {
+            .container {
+                width: 90%;
+            }
+        }
+        .benefitsWrapper {
+            .benefits {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        .banner {
+            height: auto;
+            padding-top: 100px;
+            border-bottom: none;
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+                .text {
+                    width: 100%;
+                    p {
+                        &:first-child {
+                            font-size: 20px;
+                        }
+                        &:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                    .desktopForm {
+                        display: none;
+                    }
+                }
+                .mobileForm {
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    .formGroup {
+                        flex-direction: column;
+                        input {
+                            margin-bottom: 15px;
+                        }
+                        input,
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+                .image {
+                    width: 270px;
+                    margin: 40px auto;
+                }
+            }
+        }
+        .benefitsWrapper {
+            .floatingLeft,
+            .floatingRight {
+                width: 80px;
+                z-index: -2;
+            }
+            .floatingLeft {
+                top: 15px;
+            }
+            .floatingRight {
+                bottom: -80px;
+            }
+            .benefits {
+                width: 90%;
+                flex-direction: column;
+                .benefit {
+                    &:nth-child(2) {
+                        margin: 0;
+                    }
+                    margin-bottom: 30px !important;
+                }
+            }
+        }
+        .homecampWrapper {
+            .desc {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .schoolsWrapper {
+            .schools {
+                overflow: auto;
+                justify-content: flex-start;
+                padding: 0 20px;
+            }
+        }
+        .prefooter {
+            form {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                .formGroup {
+                    flex-direction: column;
+                    input {
+                        margin-bottom: 15px;
+                    }
+                    input,
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+$sidebarWidth: 290px;
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    .breadcrumbsWrapper {
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        z-index: 4;
+    }
+
+    .body {
+        padding-top: 40px;
+        width: 100%;
+
+        .sidebarWrapper {
+            position: fixed;
+            width: $sidebarWidth;
+            height: calc(100vh - 60px - 40px);
+            z-index: 1;
+        }
+
+        .activeContentWrapper {
+            width: calc(100% - #{$sidebarWidth});
+            height: calc(100vh - 60px - 40px);
+            padding: 35px 0 0 60px;
+            margin-left: $sidebarWidth;
+            padding-right: calc(max(60px, 100% - #{$sidebarWidth} - 1100px));
+            /* 
+               When screen width > 1100px padding is 60 + the diff b/w screen width and 1100 . This enforces a max width rule
+               without adding the max-width property because that means vertical scrollbar on content would also be capped
+               horizonatlly at max width i.e, 1100px 
+            */
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .activeContentWrapper {
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        .body {
+            .activeContentWrapper {
+                margin-left: 0 !important;
+                width: 100% !important;
+                z-index: 2;
+            }
+
+            .breadcrumbsWrapper {
+                z-index: 4;
+            }
+
+            .sidebarWrapper {
+                width: 0;
+                opacity: 0;
+                margin-top: -50px;
+                padding-top: 2em;
+
+                z-index: 1;
+
+                * {
+                    pointer-events: none;
+                }
+
+                &.sidebarOpen {
+                    display: flex;
+                    width: $sidebarWidth !important;
+                    opacity: 1;
+
+                    z-index: 5;
+
+                    * {
+                        pointer-events: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Secondary navbar height increases */
+@media (max-width: 900px) {
+    .wrapper {
+        .activeContentWrapper {
+            padding-top: 55px;
+        }
+    }
+}
+
+/* Secondary navbar height goes back to orignal */
+@media (max-width: 700px) {
+    .wrapper {
+        .activeContentWrapper {
+            padding-top: 35px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        margin-left: 0 !important;
+        .activeContentWrapper {
+            padding-inline: 15px !important;
+        }
+        .activeContentWrapper.paddingRight60 {
+            padding-right: 15px;
+        }
+    }
+}

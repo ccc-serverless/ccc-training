@@ -1,0 +1,21 @@
+[{
+        "text": "√5",
+        "type": "irrational_numbers"
+    },
+    {
+        "text": "12",
+        "type": "natural_numbers"
+    },
+    {
+        "text": "0",
+        "type": "whole_numbers"
+    },
+    {
+        "text": "-5",
+        "type": "integers"
+    },
+    {
+        "text": "5.1",
+        "type": "rational_numbers"
+    }
+]

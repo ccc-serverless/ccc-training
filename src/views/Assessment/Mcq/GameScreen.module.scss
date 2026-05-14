@@ -1,0 +1,120 @@
+.wrapper {
+    width: calc(100%);
+    position: relative;
+    height: calc(100vh - 60px);
+    $sidebarWidth: 250px;
+
+    .sidebar {
+        position: absolute;
+        width: $sidebarWidth;
+        top: 0;
+        left: 0;
+        height: calc(100vh - 60px) !important;
+        z-index: 2;
+    }
+    .sidebar.mobOpen {
+        width: $sidebarWidth !important;
+    }
+
+    .main {
+        top: 0;
+        left: $sidebarWidth;
+        position: absolute;
+        background-image: url("../../../assets/images/assessment.png");
+        background-size: cover;
+        background-position: center;
+        height: calc(100vh - 60px);
+        width: calc(100% - #{$sidebarWidth});
+        padding: 3.5em;
+        z-index: 1;
+
+        .ham {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            color: white;
+            display: none;
+        }
+    }
+
+    .header {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .subheader {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 26px;
+    }
+    .submissionModalWrapper {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .body {
+            margin-bottom: 20px;
+        }
+        .unansweredWrapper {
+            margin-bottom: 2em;
+            font-size: 0.9rem;
+            background-color: #f0dddd;
+            padding: 1em;
+            color: #ff0000;
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+
+            div.title {
+                margin-bottom: 0.3em;
+            }
+
+            .questions {
+                font-size: 0.9rem;
+            }
+        }
+        .buttons {
+            button {
+                width: 100px;
+                height: 40px;
+                border-radius: 10px;
+                &:first-child {
+                    border: 1px solid #d4d4d4;
+                    margin-right: 20px;
+                    width: 180px;
+                }
+                &:nth-child(2) {
+                    background-color: #6a2c70;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        .sidebar {
+            width: 0px;
+        }
+        .main {
+            left: 0;
+            width: 100vw;
+            padding-block: 4.5em;
+            padding-inline: 1em !important;
+
+            .ham {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+}

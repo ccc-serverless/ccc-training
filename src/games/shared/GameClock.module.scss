@@ -1,0 +1,57 @@
+.timerWrapper {
+  width: fit-content;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .mainTimer {
+    width: 140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding: 5px 0;
+    border-radius: 10px;
+    .time {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      text-align: center;
+      color: #979797;
+      font-weight: 500;
+      .timeText {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      p {
+        width: 50px;
+      }
+    }
+  }
+  .timerText {
+    width: 200px;
+    color: #979797;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .timerWrapper {
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    .mainTimer {
+      .time {
+        font-size: 10px;
+        .timeText {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

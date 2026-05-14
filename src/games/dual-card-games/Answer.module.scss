@@ -1,0 +1,66 @@
+.wrapper {
+    padding: 30px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .answer {
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                outline: none;
+                height: 37px;
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                color: #fff;
+                padding: 0 5px;
+                margin-bottom: 18px;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+            button {
+                width: 103px;
+                height: 37px;
+                border-radius: 5px;
+                background-color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                color: #2f617e;
+            }
+        }
+    }
+    .solution {
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        button {
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-left: 5px;
+        }
+    }
+    .ansIndicator {
+        margin-top: auto;
+    }
+    .solutionText {
+        p {
+            color: #fff;
+        }
+    }
+    .answerDesc {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+}

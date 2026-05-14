@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+
+  input {
+    background-color: #e7f6ff;
+    color: #708fa0;
+    height: 40px;
+    border: none;
+    padding-left: 1em;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../utils/colors.scss";
+
+.wrapper {
+    width: 835px;
+    margin-right: -35px;
+    .tabs {
+        display: flex;
+        align-items: center;
+        margin-bottom: -20px;
+        .tab {
+            margin-right: 35px;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.56px;
+            color: $white;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            border-bottom: 2px solid transparent;
+            position: relative;
+        }
+        .activeTab {
+            border-color: $white;
+            &::before {
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                transform: translate(-50%);
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 10px solid $white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .wrapper {
+        width: 1000px;
+        margin-right: -100px;
+        .tabs {
+            width: 90%;
+            height: 50px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            // margin-left: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1130px) {
+    .wrapper {
+        width: 95%;
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        margin: 0 auto;
+        .tabs {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.radioWrapper {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.radioInput {
+    display: none;
+    &:checked+.radio::after {
+        transform: scale(1);
+    }
+}

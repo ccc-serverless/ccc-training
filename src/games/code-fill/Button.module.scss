@@ -1,0 +1,12 @@
+.wrapper {
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: inset 0 -4px 10px 0 rgba(0, 0, 0, 0.3);
+    border: solid 1px #999;
+    background-color: #fff;
+
+    width: 100px;
+    height: 35px;
+    color: #4e71b8;
+    font-weight: 700;
+}

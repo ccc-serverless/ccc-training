@@ -1,0 +1,116 @@
+{
+    "beginner": [
+        {
+            "code": "035CF",
+            "classCount": 8,
+            "title": "Logic Building",
+            "info": "Learn to apply maths & logic to develop programs for real world problems.",
+            "price1": 2999,
+            "price2": 999,
+            "image": "codingRed",
+            "button": "style.redButton",
+            "buttonText": "Level 1",
+            "timeout": 500
+        },
+        {
+            "code": "035PS",
+            "classCount": 12,
+            "title": "Coding Fundamentals",
+            "info": "Nothing a code can’t do. Start building fundamentals of computers and computational thinking",
+            "price1": 3999,
+            "price2": 1599,
+            "image": "codingGreen",
+            "buttonText": "Level 2",
+            "button": "style.greenButton",
+            "timeout": 1000
+        },
+        {
+            "code": "035CC",
+            "classCount": 16,
+            "title": "Problem Solving using Python",
+            "info": "Acquire computational thinking by solving problems in python.",
+            "price1": 4999,
+            "price2": 2599,
+            "image": "codingBlue",
+            "buttonText": "Level 3",
+            "button": "style.blueButton",
+            "timeout": 1500
+        }
+    ],
+    "intermediate": [
+        {
+            "code": "068CF",
+            "classCount": 8,
+            "title": "Logic Building & Coding Fundamentals",
+            "info": "Learn to apply maths & logic to develop programs for real world problems.",
+            "price1": 2999,
+            "price2": 999,
+            "image": "codingRed",
+            "buttonText": "Level 1",
+            "button": "style.redButton",
+            "timeout": 500
+        },
+        {
+            "code": "068PS",
+            "classCount": 12,
+            "title": "Problem Solving using Python",
+            "info": "Acquire computational thinking by solving problems in python.",
+            "price1": 3999,
+            "price2": 1599,
+            "image": "codingGreen",
+            "buttonText": "Level 2",
+            "button": "style.greenButton",
+            "timeout": 1000
+        },
+        {
+            "code": "068CC",
+            "classCount": 30,
+            "title": "Competitive Coding - I",
+            "info": "Solve problems efficiently & kickstart your participation in global competitions.",
+            "price1": 9998,
+            "price2": 5199,
+            "image": "codingBlue",
+            "buttonText": "Level 3",
+            "button": "style.blueButton",
+            "timeout": 1500
+        }
+    ],
+    "advanced": [
+        {
+            "code": "912CF",
+            "classCount": 8,
+            "title": "Logic Building & Coding Fundamentals",
+            "info": "Learn to apply maths & logic to develop programs for real world problems.",
+            "price1": 2999,
+            "price2": 999,
+            "image": "codingRed",
+            "buttonText": "Level 1",
+            "button": "style.redButton",
+            "timeout": 500
+        },
+        {
+            "code": "912PS",
+            "classCount": 12,
+            "title": "Problem Solving using Python",
+            "info": "Acquire computational thinking by solving problems in python.",
+            "price1": 3999,
+            "price2": 1599,
+            "image": "codingGreen",
+            "buttonText": "Level 2",
+            "button": "style.greenButton",
+            "timeout": 1000
+        },
+        {
+            "code": "912CC",
+            "classCount": 40,
+            "title": "Competitive Coding - II",
+            "info": "Solve problems efficiently & accelarate your participation in global competitions and hackathons.",
+            "price1": 14997,
+            "price2": 7799,
+            "image": "codingBlue",
+            "buttonText": "Level 3",
+            "button": "style.blueButton",
+            "timeout": 1500
+        }
+    ]
+}
