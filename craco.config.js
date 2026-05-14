@@ -9,7 +9,25 @@ const resolvedAliases = Object.fromEntries(
 );
 
 module.exports = {
+  style: {
+    sass: {
+      loaderOptions: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+          loadPaths: [path.resolve(__dirname, 'src')],
+        },
+      },
+    },
+  },
   webpack: {
     alias: resolvedAliases,
+    configure: (webpackConfig) => {
+      webpackConfig.module.rules.push({
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
+      });
+      return webpackConfig;
+    },
   },
 };
