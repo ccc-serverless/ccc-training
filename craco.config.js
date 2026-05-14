@@ -20,7 +20,10 @@ module.exports = {
     },
   },
   webpack: {
-    alias: resolvedAliases,
+    alias: {
+      'use-window-focus': path.resolve(__dirname, 'node_modules/use-window-focus/dist/index.js'),
+      ...resolvedAliases,
+    },
     configure: (webpackConfig) => {
       webpackConfig.module.rules.push({
         test: /\.mjs$/,
