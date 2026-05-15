@@ -1,8 +1,10 @@
 {
-  "buildCommand": "npm run build-prod",
+  "buildCommand": "npm run build",
   "build": {
     "env": {
-      "NODE_OPTIONS": "--openssl-legacy-provider"
+      "NODE_OPTIONS": "--openssl-legacy-provider",
+      "REACT_APP_ENV": "PROD",
+      "REACT_APP_API_BASE_URL": "https://api.ccc.training"
     }
   }
 }
