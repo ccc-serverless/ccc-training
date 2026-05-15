@@ -9,6 +9,15 @@ const resolvedAliases = Object.fromEntries(
 );
 
 module.exports = {
+  style: {
+    sass: {
+      loaderOptions: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
+  },
   webpack: {
     alias: {
       'use-window-focus': path.resolve(__dirname, 'node_modules/use-window-focus/dist/index.js'),
