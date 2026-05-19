@@ -3,6 +3,7 @@
   "outputDirectory": "build",
   "build": {
     "env": {
+      "CI": "false",
       "NODE_OPTIONS": "--openssl-legacy-provider",
       "REACT_APP_ENV": "PROD",
       "REACT_APP_API_BASE_URL": "https://api.ccc.training"
